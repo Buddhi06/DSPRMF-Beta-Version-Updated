@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap Template Atlas</title>
+    <meta name="description" content="Free bootstrap template Atlas">
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+   
+</head>
+<body> 
+   
+<div class="container mt-5">
+    <div class="container2">
+    <a href="index.html"><image src="img/home.jpg" width="50" height="50"></image>&nbsp; &nbsp; Home</a>
+    <h2 class="text-center font-weight-bold my-5">Guidance on Perfroming Risk Assessment </h2>
+    <a href="analysis.html"><image src="img/next.jpg" width="50" height="50"></image>&nbsp; &nbsp; Next</a>
+    </div>
+        <div class="row" id="step1">
+            <div>
+                <h3>
+                    Step 01: Prepare for Risk Asssessment
+                </h3>
+                <p>
+                    The first step in the risk assessment process is to prepare for the assessment and establish a context for the risk assessment. Preparing for risk assessment should include the following tasks:
+                </p>
+                <ul>
+                    <li>Identify the purpose of the assessment</li>
+                    <li>Identify the scope of the assessment</li>
+                    <li>Identify the assumptions and constraints associated with the assessment</li>
+                    <li>Identify the sources of information to be used as inputs to the assessment</li>
+                    <li>Identify the risk models, i.e., risk factors (threat, vulnerability, impact, likelihood and predisposing condition) and analytical approaches, i.e., assessment and analysis approaches to be used during the assessment</li>
+
+                </ul>
+            </div>
+        </div>
+            <div class="row" id="step2">
+                <h3>
+                    Step 02: Select the Risk Assessment Approach
+                </h3>
+                <p>
+                    The risk is determined by considering the likelihood that known threats exploit known vulnerabilities and the resulting consequences or adverse impacts if such exploitations occur. The risk assessment phase starts with selecting the risk assessment approach. There are three main risk assessment approaches: <i><b> qualitative, quantitative and semi-quantitative</i></b>. 
+                </p>
+            </div>
+            <div class="row">
+    <div class="col-4" id ="c1" onclick="toggle('div1')">
+       <center> <button  id="btn1">Qualitative</button></center>
+    </div>
+   
+    
+    <div class="col-4" id="c2" onclick="toggle('div2')">
+        <center><button  id="btn2" >Quantitative</button></center>
+    </div>
+    
+     
+    <div class="col-4" id="c3" onclick="toggle('div3')">
+      <center><button  id="btn3" >Semi-Quantitative</button></center>
+    </div>
+</div>
+<br>
+
+    <div class="row">
+    <div class="col-4 hidden rounded shadow-md" id="div1" >
+      <p>The qualitative approach typically uses a set of methods, principles, or rules for assessing risks based on nonnumerical categories or levels (e.g., very low, low, moderate, high, very high) [2]. However, in most circumstances, the range of values in qualitative approach is comparatively small, which makes the relative prioritisation or comparison within the set of reported risks difficult [2]. Furthermore, the assessment results could depend on the individual experiences if each value is not very clearly defined or is not characterised by meaningful examples [2]. Therefore, the levels of qualitative scales should be unambiguous, should not overlap, the qualitative descriptions should be expressed in objective language and their increments should be clearly defined [4]. </p>
+    </div>
+    <div class="col-4 hidden rounded shadow-md" id="div2" >
+        <p>The quantitative approach typically uses a set of methods, principles or rules for assessing risk based on use of numbers where the meanings and proportionality of values are maintained inside and outside the context of the assessment [2]. This type of risk assessment most effectively supports cost-benefit analysis of alternative risk responses or courses of action [2]. The risk is usually expressed in monetary values which shows the amount of money an organisation may lose over a certain period of time if the threat event occurs or vulnerability is exploited. Risk level can be calculated using any method and taking into account any relevant factors, but it is usually shown by multiplying the likelihood by the consequence [4]. Likelihood represents the probability or frequency of an event occurring within a given timeframe, i.e., annually (per year), large (e.g., per century) or little (e.g., per second) [4]. However, the meaning of the quantitative results may not always be clear and may require interpretation and explanation, i.e., usually to explain the assumptions and constraints on using the results [2]. Usually, the risks can be quantified as annual loss expectancy [4] and can be calculated by using the formula:
+ALE=SLE×ARO
+SLE=AV×EF
+ALE-Annual Loss Expectancy
+SLE-Single Loss Expectancy=The value of single data security threat
+ARO-Annual Rate of Occurrence=Estimated frequency with which that data security threat might occur in one year 
+AV-Asset Value = The total monetary value of the asset
+EF-Exposure Factor = The percentage of loss likely to occur if the threat event occurs
+</p>
+    </div>
+    <div  class="col-4 hidden rounded shadow-md" id="div3">
+        <p>The semi-quantitative approach typically uses a set of methods, principles, or rules for assessing risk that uses bins, scales or representative numbers whose values and meanings are not maintained in other contexts [2]. Semi-quantitative approach can provide the benefits of both quantitative and qualitative approaches. The bins (e.g., 0-15, 16-35, 36-70, 71-85, 86-100) or scales (e.g., 1-10) can be easily translated into qualitative terms that support the communication of risks. E.g., a score of 95 can be interpreted as very high, while also allowing relative comparisons between values in different bins even within the same bin (e.g., the difference between a risk with the score of 70 and 71 respectively is relatively insignificant, while the difference between risks scored 36 and 70 is relatively significant) [2]. In semi-quantitative approach, the role of expert judgement in assigning values is more evident than in a purely quantitative approach [2].</p>
+    </div>
+
+
+<div id="collapse" class="row">
+ <h3 align="text-center">Comparison of the three risk assessment approaches</h3>
+ <br><br>
+<div class="col-12">
+                <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Approach</th>
+                <th>Advantages</th>
+                <th>Disadvantages</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Qualitative Approach</strong></td>
+                <td>
+                    <ul>
+                        <li>Quick to implement as it does not rely on numerical data.</li>
+                        <li>No special tools or software required.</li>
+                        <li>Less expensive than the quantitative approach.</li>
+                        <li>Can assess intangible assets (e.g., reputation, goodwill).</li>
+                        <li>Involves non-security and non-technical staff easily.</li>
+                        <li>Helps in early identification and prioritization of risks.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Results depend on expert experience and team quality.</li>
+                        <li>Subjective and may introduce biases.</li>
+                        <li>Difficult to compare risks due to a small range of values.</li>
+                        <li>Limited ability to quantify and compare risks accurately.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Quantitative Approach</strong></td>
+                <td>
+                    <ul>
+                        <li>Provides objective, measurable risk assessment.</li>
+                        <li>Enables comparison of risk severity.</li>
+                        <li>Well-understood asset valuation and risk mitigation options.</li>
+                        <li>Supports cost/benefit assessments, aiding senior management decisions.</li>
+                        <li>Expresses results in management-friendly terms (e.g., monetary value, probability).</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>More time-consuming and complex.</li>
+                        <li>Data collection can be costly and difficult.</li>
+                        <li>Requires interpretation and explanation of assumptions.</li>
+                        <li>Needs a significant amount of data and expertise.</li>
+                        <li>Relies on available data quality.</li>
+                        <li>Requires specialized methods/tools (e.g., EMV, Decision Tree Analysis, Monte Carlo Analysis, FTA, FMEA).</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Semi-Quantitative Approach</strong></td>
+                <td>
+                    <ul>
+                        <li>Incorporates expert judgment in value assignments.</li>
+                        <li>Provides better relative prioritization than qualitative approaches (if scales offer enough granularity).</li>
+                        <li>Does not require specialized tools.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Requires clearly defined scales or value bins.</li>
+                        <li>More time-consuming than a qualitative approach.</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    
+    </div>
+    <div class="row">
+    <h4>The framework proposes to use the following approach</h4>
+    <p>
+        When comparing the three approaches, most security risk assessment models use qualitative or semi-quantitative approaches to assess security risks [1]. The main fault of quantitative assessment lies in data flaws. In many cases, there is insufficiently detailed information on hand to be utilised for performing a quantitative risk assessment successfully. As the quantitative risk assessment utilises historical data to determine the likelihood of a threat event occurring and or vulnerability being exploited, the historical data that is not recently updated can cause errors in the risk assessment. Moreover, as the quantitative risk assessment express the results in monetary values it is difficult to assess e.g., the harm to user health or organisational reputational damage in terms of monetary values. Hence, the quantitative risk assessment will not be appropriate in data security risk management. This framework will suggest using <i><b>qualitative and/or semi-quantitative</i></b> approaches for data security risk assessment.
+    </p>
+    
+</div>
+
+</div>
+
+</div>
+<!-- copyright -->
+    <div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                    Copyright © 2025 Buddhika Jayaneththi
+                </div>
+                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                    <a href="mailto:buddhika.jayaneththi@dkit.ie" class="d-inline-block text-center ml-2">
+                        <i class="fa fa-medium" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/buddhika-gayashani/" class="d-inline-block text-center ml-2" target="_blank">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="js/toggle.js"></script>
+
+
+</body>
+	
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DSRMF</title>
+    <meta name="description" content="Free bootstrap template Atlas">
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+ 
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css">
+
+ <link rel="stylesheet" href="css/menu.css">
+
+    <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+     
+</head>
+
+<body style="background: linear-gradient(90deg, #d6cfd2, #f3f1f2); background-color: #d6cfd2;">
+
+    <nav style="display: flex; justify-content: space-between; align-items: center; background: #000039; padding: 0px;">
+    
+    <!-- Main Menu -->
+    <ul class="top-bar" style="display: flex; list-style: none; margin: 0; padding: 0;">
+        <li style="margin-right: 20px;"><a href="index.html" style="color: white; text-decoration: none;">Home: The Risk Management Process</a></li>
+        <li style="margin-right: 20px; position: relative;">
+            <a href="#" style="color: white; text-decoration: none;">Phase 1: Risk Assessment ▼</a>
+            <ul class="dropdown">
+                <li>
+                    <a href="#" style="color: white; text-decoration: none;">Step 1: Risk Analysis ►</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="analysis-step2.html">Activity 1: Identification of Intended use and characteristics related to data security and privacy</a></li>
+                        <li><a href="analysis-step3.html">Activity 2: Identification of assets, threats and vulnerabilities</a></li>
+                        <li><a href="analysis-step4.html">Activity 3: Risk Estimation</a></li>
+                    </ul>
+                    <a href="evaluation.html" style="color: white; text-decoration: none;">Step 2: Risk Evaluation ►</a>
+                </li>
+            </ul>
+        </li>
+        <li style="margin-right: 20px;">
+            <a href="control.html" style="color: white; text-decoration: none;">Phase 2: Risk Control ▼</a>
+            <ul class="dropdown">
+                <li><a href="control.html">Step 1: Risk Control Option Analysis</a></li>
+                <li><a href="mapping3.drawio.html">Step 2: Identification and Implementation of Risk Controls</a></li>
+                <li><a href="residual.html">Step 3: Residual Risk Evaluation</a></li>
+                <li><a href="benefit.html">Step 4: Benefit-Risk Analysis</a></li>
+            </ul>
+        </li>
+        <li style="margin-right: 20px;"><a href="overall-residual.html" style="color: white; text-decoration: none;">Phase 3: Evaluation of Overall Residual Risk Acceptability</a></li>
+        <li><a href="RMreport.html" style="color: white; text-decoration: none;">Phase 4: Preparation of the Risk Management Report</a></li>
+    </ul>
+
+    <!-- Home, Back, Next Buttons -->
+    <div style="display: flex; gap: 10px;">
+        <a href="benefit.html" style="background:#6c757d; color:white; padding:8px 15px;
+              border-radius:6px; text-decoration:none; font-weight:bold;
+              width:140px; text-align:center;">Previous Step</a>
+        <a href="RMreport.html" style="background:#28a745; color:white; padding:8px 15px;
+              border-radius:6px; text-decoration:none; font-weight:bold;
+              width:110px; text-align:center;">Next Step</a>
+    </div>
+</nav>
+
+    <div class="container mt-5">
+    <div>
+    <h2 class="text-center font-weight-bold my-5"><i>Phase 3:</i><br>Evaluation of overall residual risk acceptability </h2>
+</div>
+<div class="row">
+    <p>During this phase, the MDS AI model should be assessed for overall residual risk acceptability. This framework recommends conducting <b><i>Penetration testing (pentesting)</i></b> to evaluate the overall residual risk acceptability of the AI model.</p>
+    <p>Before conducting a penetration testing, it is important to <b>verify and validate</b> that the risk controls are properly implemented based on the implementation guidelines provided and they are comprehensive in addressing the risk(s) from all identified threats and vulnerabilities. You may review the list of threats, vulnerabilities, and controls to verify that all the required controls are implemented to mitigate the identified threats and vulnerabilities at each stage of the AI model lifecycle.</p>
+    <p><i><b>Penetration testing (pentesting)</b></i> involves conducting simulated attacks on the AI model to identify and exploit potential vulnerabilities, ensuring the security, privacy, and robustness of the AI model.</p>
+</div>
+<div id="resi">
+    <h3>Steps for conducting Pentesting</h3>
+    <div>
+        <center>
+    <img src="img/pentest.png" width="800px" height="500px">
+    </center>
+
+       <h4> Step 01: Preparation </h4>
+       <b>Defining the scope of testing</b> includes identifying the following:
+       <ul>
+         <li>A list of assets to be considered for testing - <a href="stride3.html">Possible list of assets</a> </li>
+          <li>A list of threats and vulnerabilities for which the controls are implemented - <a href="stride4.html">Possible list of threats and vulnerabilities</a> </li>
+          <li>Objectives of the testing - Eg: Identify adversarial vulnerabilities, test for data/model leakage, check security of APIs etc...</li>
+       </ul>
+       <p> <b>Information gathering</b> includes the following:</p>
+       <ul>
+         <li>The type of model (e.g., classifier, regressor, image model, etc...), framework used (e.g., TensorFlow, PyTorch, Scikit-learn, HuggingFace), and tasks (e.g., classification, regression).</li>
+          <li>Input/Output Structure - What kind of data is accepted (e.g., text, image, JSON)?</li>
+       </ul>
+   </p>
+
+       
+        <h4> Step 02: Testing </h4>
+        This step includes simulating data security and privacy attacks to test the effectiveness of the implemented risk controls for all the identified residual risks. The attacks may include the following: 
+        (A comprehensive list of possible attacks is available <a href="Threats and vulnerabilities.drawio.html">Here!)</a><br>
+            <ul>
+         <li>Injecting adversarial inputs - Create minimally modified inputs that confuse the model using tools such as: <i>CleverHans, Foolbox, ART (Adversarial Robustness Toolbox).</i></li>
+         <li>Attempting data poisoning - Inject malicious samples to observe whether they degrade model performance, using tools such as: IBM ART, TrojAI.</li>
+         <li>Exploiting insecure APIs - Attempt to bypass authentication and authroisation, data encryption in transit and storage etc...using tools such as: OWASP ZAP, Burp suite.</li>
+         <ul>
+         <li>If the AI model is a deep learning model, you may use formal verification techniques such as:
+            <li>Constraint-Based (Complete) verification techniques, E.g.,SMT (Satisfiability Modulo Theories), MILP (Mixed Integer Linear Programming)</li>
+            <li>Abstraction-Based (Approximate) verification techniques, E.g., Interval abstraction (Tracks lower/upper bounds per neuron), Zonotopes (Captures linear correlations between neurons)</li>
+        </ul>
+         </li>
+     </ul>
+
+          Subsequently the AI model’s response to these attacks should be assessed to identify any weaknesses that could be exploited. For example, the following metrics can be used to assess the repsonse to simulation attacks:<br>
+           <ul>
+         <li>Accuracy/FI Score (before vs. after attack)</li>
+         <li>Precision/Recall</li>
+         <li>Confidence Scores</li>
+         <li>Attack Success Rate (ASR)</li>
+         <li>Robustness Score</li>
+         <li>Perbutaion Sensitivity</li>
+</ul>
+        <h4> Step 03: Reporting and Follow up</h4> 
+        <p>Upon completion of the simulated attacks, a detailed penetration test report of the newly identified vulnerabilities should be prepared for analysis. </p>
+    </p>
+   </div>
+</div>
+   <div id="resi2">
+    <p><b>After conducting pentesting, the following steps needs to be assess overall residual risk acceptability:</b></p>
+       <h4>Steps for Conducting Evaluation of the Overall Residual Risk Acceptability based on the Penetration Test Report</h4>
+ 
+        <center>
+    <img src="img/resi.png" width="1100px" height="500px">
+    </center>
+       Upon completion of Pentesting, the test results report should be reviewed to evaluate the overall residual risk acceptability. Passing Pentesting does not indicate that the MDS AI model is invulnerable; it only means that the model resisted the forms of simulated attacks. 
+If the Pentesting is successful, the developer can decide that the MDS AI model is ready to be deployed for real-world use. If the test fails, the following tasks should be conducted:
+<ul>
+<li>Check whether the vulnerability is <b>new</b> or an <b>existing</b> vulnerability which is already listed in the framework.</li>
+<li>If the vulnerability is an <b>existing one</b>, review the list of risk controls provided in the framework to check whether the control is improperly implemented without following the implementation details provided. After identifying the reason for the failure, perform suitable measures to address the identified reason for failure.</li>
+<li>If the vulnerability is a <b>new one</b>, check whether the framework provides appropriate risk controls to mitigate it. If <b>yes</b>, implement the risk control by following the implementation details provided in the framework. If <b>no</b>, identify appropiate risk controls and implementation details from external sources such as NIST 800-53, ISO 27001/02, IEC 27799, OWASP, Plot4ai, other relevant technical reports, scientific papers, websites, online databases etc…</li>
+<li>Update the framework by documenting the newly identified vulnerabilities, controls and control implementation details.</li>
+<li>After implementating the risk controls, conduct pentesting again to verify whether the implemented control successfully mitigates the vulnerability.</li>
+<li>If the test is succsessful, the developer can mark the AI model as suitable for deployment in the real-world.</li>
+<li>If the test is unsuccessful, further risk controls need to be implemented.</li>
+   </ul>
+   <p>For an overall residual risk that is judged acceptable, the manufacturer should decide which documentation regarding data security and privacy is necessary to include in the accompanying documents in order to manage the overall residual risk. This needs to be communicated in such a way that it does not provide a blueprint for a potential attacker to exploit the non-mitigated vulnerability.</p>
+</div>
+</div>
+</div>
+          
+     <!-- copyright -->
+    <div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                    Copyright © 2026 Buddhika Jayaneththi
+                </div>
+                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                    <a href="mailto:buddhika.jayaneththi@dkit.ie" class="d-inline-block text-center ml-2">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/buddhika-gayashani/" class="d-inline-block text-center ml-2" target="_blank">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    
+    <!-- AOS -->
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+      });
+    </script>
+
+    <script>
+        function calculateResidualRisk() {
+            // Get input values
+            let inherentRisk = parseFloat(document.getElementById("inherentRisk").value);
+            let controlEffectiveness = parseFloat(document.getElementById("controlEffectiveness").value);
+
+            // Validate inputs
+            if (isNaN(inherentRisk) || isNaN(controlEffectiveness) || controlEffectiveness < 0 || controlEffectiveness > 1) {
+                document.getElementById("result").innerHTML = "Please enter valid numbers (Control Effectiveness should be between 0 and 1)";
+                document.getElementById("result").style.color = "red";
+                return;
+            }
+
+            // Calculate Residual Risk
+            let residualRisk = inherentRisk * (1 - controlEffectiveness);
+
+            // Display result
+            document.getElementById("result").innerHTML = `Residual Risk: <span style="color:blue;">${residualRisk.toFixed(2)}</span>`;
+        }
+    </script>
+</body>
+
+</html>
+

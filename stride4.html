@@ -1,0 +1,301 @@
+<html>
+<meta charset="UTF-8">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DSRMF</title>
+    <meta name="description" content="Free bootstrap template Atlas">
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css">
+<link rel="stylesheet" href="css/menu.css">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+     
+</head>
+
+<body style="background: linear-gradient(90deg, #e8f0f7, #ffffff);  background-color: #b0c4de;">
+
+    <nav style="display: flex; justify-content: space-between; align-items: center; background: #000039; padding: 0px;">
+    
+    <!-- Main Menu -->
+    <ul class="top-bar" style="display: flex; list-style: none; margin: 0; padding: 0;">
+        <li style="margin-right: 20px;"><a href="index.html" style="color: white; text-decoration: none;">Home: The Risk Management Process</a></li>
+        <li style="margin-right: 20px; position: relative;">
+            <a href="#" style="color: white; text-decoration: none;">Phase 1: Risk Assessment ▼</a>
+            <ul class="dropdown">
+                <li>
+                    <a href="#" style="color: white; text-decoration: none;">Step 1: Risk Analysis ►</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="analysis-step2.html">Activity 1: Identification of Intended use and characteristics related to data security and privacy</a></li>
+                        <li><a href="analysis-step3.html">Activity 2: Identification of assets, threats and vulnerabilities</a></li>
+                        <li><a href="analysis-step4.html">Activity 3: Risk Estimation</a></li>
+                    </ul>
+                    <a href="evaluation.html" style="color: white; text-decoration: none;">Step 2: Risk Evaluation ►</a>
+                </li>
+            </ul>
+        </li>
+        <li style="margin-right: 20px;">
+            <a href="control.html" style="color: white; text-decoration: none;">Phase 2: Risk Control ▼</a>
+            <ul class="dropdown">
+                <li><a href="control.html">Step 1: Risk Control Option Analysis</a></li>
+                <li><a href="mapping3.drawio.html">Step 2: Identification and Implementation of Risk Controls</a></li>
+                <li><a href="residual.html">Step 3: Residual Risk Evaluation</a></li>
+                <li><a href="benefit.html">Step 4: Benefit-Risk Analysis</a></li>
+            </ul>
+        </li>
+        <li style="margin-right: 20px;"><a href="overall-residual.html" style="color: white; text-decoration: none;">Phase 3: Evaluation of Overall Residual Risk Acceptability</a></li>
+        <li><a href="RMreport.html" style="color: white; text-decoration: none;">Phase 4: Preparation of the Risk Management Report</a></li>
+    </ul>
+
+    <!-- Home, Back, Next Buttons -->
+    <div style="display: flex; gap: 10px;">
+        <a href="stride3.html" style="background:#6c757d; color:white; padding:8px 15px;
+              border-radius:6px; text-decoration:none; font-weight:bold;
+              width:140px; text-align:center;">Previous Step</a>
+        <a href="analysis-step4.html" style="background:#28a745; color:white; padding:8px 15px;
+              border-radius:6px; text-decoration:none; font-weight:bold;
+              width:140px; text-align:center;">Next Step</a>
+    </div>
+</nav>
+    	<div class="container mt-5">
+    <div>
+    <h2 class="text-center font-weight-bold my-5">Activity 2: Phase 4 and 5: Threat and Vulnerability Identification </h2>
+</div>
+<div class="row">
+<div>
+    <div class="col-12" id="task1">
+    <h4>STRIDE for Security Threat Modeling</h4>
+    <p>
+                    <p> This framework proposes using the STRIDE threat modeling methodology to identify security threats associated with the assets linked to each stage of the AI model lifecycle (identified in TM phase 3).</p>
+                    <p>
+                        STRIDE has been recommended and applied as a threat modeling approach for AI models by independent agencies such as <i>European Union Agency for Cybersecurity (ENISA) </i>. <b>STRIDE</b> categorises security threats into six groups, based on its acronym: 
+                        <ol>
+                            <li><b>Spoofing</b></li>
+                            <li><b>Tampering</b></li>
+                            <li><b>Repudiation</b></li>
+                            <li><b>Information Disclosure</b></li>
+                            <li><b>Denial of Service</b></li>
+                            <li><b>Elevation of Privilege</b></li>
+                        </ol>
+                </p>
+                
+
+    <p>STRIDE threat modeling considers the following <b>six categories of threats</b>, with each threat compromising a specific <b>security objective</b>.</p>
+
+
+<div class="row">
+    <table class="table table-bordered mx-auto" style="width: 80%">
+        <thead class="table-dark">
+        <tr>
+            <th>Threat Category</th>
+            <th>Description</th>
+            <th>Security Property</th>
+        </tr>
+    </thead>
+        <tr>
+            <td>Spoofing</td>
+            <td>The attacker impersonates or masquerades as another person, system, or process to gain unauthorised access or perform malicious actions.</td>
+            <td>Authenticity</td>
+        </tr>
+        <tr>
+            <td>Tampering</td>
+            <td>An attacker modifies the data, either in transit or at rest, to manipulate the outcomes or disrupt the operations.</td>
+            <td>Integrity</td>
+        </tr>
+        <tr>
+            <td>Repudiation</td>
+            <td>An attacker deletes information about an action or transaction in order to deny it ever took place, and the system lacks the ability to prove otherwise.</td>
+            <td>Non-repudiation</td>
+        </tr>
+        <tr>
+            <td>Information Disclosure</td>
+            <td>Sensitive information is stolen, accessed, or intercepted by unauthorised users either in transit, at rest, or during processing.</td>
+            <td>Confidentiality</td>
+        </tr>
+        <tr>
+            <td>Denial of Service (DoS)</td>
+            <td>An attempt to disrupt the availability of a system, application, or service, making it inaccessible to legitimate users.</td>
+            <td>Availability</td>
+        </tr>
+        <tr>
+            <td>Elevation of Privilege</td>
+            <td>This is similar to spoofing, but instead of taking the identity of another, the attacker elevates their own security level to an administrator.</td>
+            <td>Authorisation</td>
+        </tr>
+    </table>
+</div>
+  <div>
+      <h4>Threat Identification</h4>
+    <p>
+    Each asset listed in Step 3 of the TM process should be analysed in terms of the above threat categories to identify the threats that affect it. For each asset, you may systematically ask the following questions:
+       </p>
+       <ol>
+           <li>How could an attacker spoof this asset?</li>
+           <li>How could an attacker tamper this asset?</li>
+           <li>Could an action involving this asset be repudiated?</li>
+           <li>Could information be improperly disclosed from this asset?</li>
+            <li>Could this asset be subjected to Denial of Service?</li>
+           <li>Could an attacker achieve Elevation of Privilege (EoP) through this asset?</li>
+       </ol>
+        <p>The following mapping can serve as the basis for identifying security threats:</p><br>
+
+        <div>
+        <center><button class="btn" onclick="window.open('New STIRDE mapping.drawio.html','mywindow')">Mapping of identified threats to STRIDE threat categories and security objectives</center>     
+        </button>
+        <br>
+    </div>
+</div>
+</div>
+<div class="col-12" id="task1">
+    <h4>LINDDUN for Privacy Threat Modeling</h4>
+    <p> This framework proposes using the LINDDUN threat modeling methodology to identify privacy threats associated with the assets linked to each stage of the AI model lifecycle (identified in TM phase 3).
+    <b>LINDDUN</b> categorises privacy threats into seven groups, based on its acronym: 
+     <ol>
+                            <li><b>Linking</b></li>
+                            <li><b>Identifying</b></li>
+                            <li><b>Non-Repudiation</b></li>
+                            <li><b>Detecting</b></li>
+                            <li><b>Data Disclosure</b></li>
+                            <li><b>Unawareness</b></li>
+                            <li><b>Non-Compliance</b></li>
+                        </ol>
+    <div class="row">
+    <table class="table table-bordered mx-auto" style="width: 80%">
+        <thead class="table-dark">
+        <tr>
+            <th>Threat Category</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+        <tr>
+            <td>Linking</td>
+            <td>Learning more about an individual or a group by associating data items or user actions.</td>
+        </tr>
+        <tr>
+            <td>Identifying</td>
+            <td>Learning the identity of an individual.</td>
+        </tr>
+        <tr>
+            <td>Non-Repudiation</td>
+            <td>Being able to attribute a claim, i.e., to know, having done, having said something, to an individual.</td>
+        </tr>
+        <tr>
+            <td>Detecting</td>
+            <td>Deducing the involvement of an individual through observation.</td>
+        </tr>
+        <tr>
+            <td>Data Disclosure</td>
+            <td>Excessively collecting, storing, processing or sharing personal data.</td>
+        </tr>
+        <tr>
+            <td>Unawareness</td>
+            <td>Insufficiently informing, involving or empowering individuals in the processing of their personal data.</td>
+        </tr>
+         <tr>
+            <td>Non-Compliance</td>
+            <td>The system deviates from security and data management best practices, standards and legislation, leading to the incomplete management of risk.</td>
+        </tr>
+    </table>
+</div>
+    <div>
+        <h4>Threat identification</h4>
+        <p>
+            <p>
+    Each asset listed in Step 3 of the TM process should be analysed in terms of the above threat categories to identify the threats that affect it. In this step, the security threats that have been already identified in the security threat identification process were analysed in terms of the LINDDUN threat categories to determine in which ways the threats could affect privacy of data. 
+          </p>
+          <p>The following mapping can serve as the basis for identifying privacy threats:</p><br>
+          <div>
+        <center><button class="btn" onclick="window.open('LINDDUN NEW.drawio.html','mywindow')">Mapping of identified threats to LINDDUN threat categories and privacy objectives</center>     
+        </button>
+        <br>
+    </div>
+        </p>
+    </div>
+
+</div>
+
+
+</div>
+   <div class="col-12" id="task1">
+        <h4>Vulnerability Identification</h4>
+            <p>As the final step, after identifying the threats, the vulnerabilities associated with each asset should be identified and documented, as they determine how each asset may be exposed to the threats listed.</p>
+        <p>The following asset, threat, and vulnerability taxonomies can serve as the basis for identifying threats and vulnerabilities.</p><br>
+        <center><button class="btn" onclick="window.open('Threats and vulnerabilities.drawio.html','mywindow')"> STRIDE Asset, Threat and Vulnerability Taxonomy   
+        </button>
+        <button class="btn" onclick="window.open('Privacy Threat and Vulnerability.drawio.html','mywindow')"> LINDDUN Asset, Threat and Vulnerability Taxonomy    
+        </button></center>
+    </div>
+</div>
+<div class="col-12" id="task1">
+<p>Several tools including the following can be used to perform <b>STRIDE</b> threat modelling:</p>
+                <table class="table table-bordered mx-auto" style="width: 80%">
+        <thead class="table-dark">
+        <tr>
+            <th>Tool</th>
+            <th>Description</th>
+            <th>Link to download</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Microsoft Threat Modeling Tool (TMT)</td>
+            <td>Microsoft Threat Modeling Tool (TMT) is a free open-source security tool designed to help security professionals and developers to identify and mitigate potential security threats in software systems including AI models. It is based on the STRIDE threat modelling framework and provides a graphical interface to conduct threat modelling and helps in generating threat reports. </td>
+            <td><a href="https://www.microsoft.com/en-us/securityengineering/sdl/threatmodeling">Microsoft TMT</a></td>
+        </tr>
+        <tr>
+            <td>OWASP Threat Dragon</td>
+            <td>OWASP Threat Dragon is a free open-source, cross-platform application for creating threat models. It supports several threat modelling frameworks including STRIDE.</td>
+            <td><a href="https://owasp.org/www-project-threat-dragon/docs-1/downloads/">OWASP Threat Dragon</a></td>
+        </tr>
+        <tr>
+            <td>IriusRisk</td>
+            <td>IriusRisk is an automated threat modelling platform designed to help developers, security teams, and enterprises identify and mitigate security threats in software including AI models. It supports several threat modelling frameworks including STRIDE. </td>
+           <td><a href="https://www.iriusrisk.com/">IriusRisk</a></td>
+        </tr>
+        <tr>
+            <td>ThreatModeler</td>
+            <td>ThreatModeler is an automated that helps organisations to identify and mitigate security threats in software applications including AI models. supports several threat modelling frameworks including STRIDE.</td>
+            <td><a href="https://www.threatmodeler.com/">ThreatModeler</a></td>
+        </tr>
+        <tr>
+            <td>STRIDE GPT</td>
+            <td>STRIDE GPT is an AI-powered threat modeling tool that leverages OpenAI's GPT models to generate threat models for a given application based on the STRIDE methodology.</td>
+            <td><a href="https://stridegpt.streamlit.app/">STRIDE GPT</a></td>
+        </tr>
+        </tbody>
+    </table>
+    <p>Information on conducting <b>LINDDUN</b> threat modeling can be found here: <a href="https://linddun.org/">linddun.org</a></p>
+</div>
+</div>
+<br>
+<!-- copyright -->
+    <div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                    Copyright © 2026 Buddhika Jayaneththi
+                </div>
+                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                    <a href="mailto:buddhika.jayaneththi@dkit.ie" class="d-inline-block text-center ml-2">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/buddhika-gayashani/" class="d-inline-block text-center ml-2" target="_blank">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+

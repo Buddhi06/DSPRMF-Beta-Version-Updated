@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DSRMF</title>
+    <meta name="description" content="Free bootstrap template Atlas">
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <!-- AOS -->
+     <link rel="stylesheet" href="css/menu.css">
+
+       <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+     
+</head>
+
+<body style="background: linear-gradient(90deg, #e9f0ea, #ffffff); background-color: #e9f0ea;">
+    
+        <nav style="display: flex; justify-content: space-between; align-items: center; background: #000039; padding: 0px;">
+    
+    <!-- Main Menu -->
+    <ul class="top-bar" style="display: flex; list-style: none; margin: 0; padding: 0;">
+        <li style="margin-right: 20px;"><a href="index.html" style="color: white; text-decoration: none;">Home: The Risk Management Process</a></li>
+        <li style="margin-right: 20px; position: relative;">
+            <a href="#" style="color: white; text-decoration: none;">Phase 1: Risk Assessment ▼</a>
+            <ul class="dropdown">
+                <li>
+                    <a href="#" style="color: white; text-decoration: none;">Step 1: Risk Analysis ►</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="analysis-step2.html">Activity 1: Identification of Intended use and characteristics related to data security and privacy</a></li>
+                        <li><a href="analysis-step3.html">Activity 2: Identification of assets, threats and vulnerabilities</a></li>
+                        <li><a href="analysis-step4.html">Activity 3: Risk Estimation</a></li>
+                    </ul>
+                    <a href="evaluation.html" style="color: white; text-decoration: none;">Step 2: Risk Evaluation ►</a>
+                </li>
+            </ul>
+        </li>
+        <li style="margin-right: 20px;">
+            <a href="control.html" style="color: white; text-decoration: none;">Phase 2: Risk Control ▼</a>
+            <ul class="dropdown">
+                <li><a href="control.html">Step 1: Risk Control Option Analysis</a></li>
+                <li><a href="mapping3.drawio.html">Step 2: Identification and Implementation of Risk Controls</a></li>
+                <li><a href="residual.html">Step 3: Residual Risk Evaluation</a></li>
+                <li><a href="benefit.html">Step 4: Benefit-Risk Analysis</a></li>
+            </ul>
+        </li>
+        <li style="margin-right: 20px;"><a href="overall-residual.html" style="color: white; text-decoration: none;">Phase 3: Evaluation of Overall Residual Risk Acceptability</a></li>
+        <li><a href="RMreport.html" style="color: white; text-decoration: none;">Phase 4: Preparation of the Risk Management Report</a></li>
+    </ul>
+
+    <!-- Home, Back, Next Buttons -->
+    <div style="display: flex; gap: 10px;">
+        <a href="implementation.html" style="background:#6c757d; color:white; padding:8px 15px;
+              border-radius:6px; text-decoration:none; font-weight:bold;
+              width:140px; text-align:center;">Previous Step</a>
+        <a href="benefit.html" style="background:#28a745; color:white; padding:8px 15px;
+              border-radius:6px; text-decoration:none; font-weight:bold;
+              width:110px; text-align:center;">Next Step</a>
+    </div>
+</nav>
+
+    <div class="container mt-5">
+    <div>
+    <h2 class="text-center font-weight-bold my-5"><i>Phase 2: Step 3:</i><br>Residual Risk Evaluation </h2>
+</div>
+<div class="row" id="re-step1">
+    <p>Residual risk is the risk that remains after risk control measures have been applied.<br><br>
+        <i>For example, encryption is a risk controls that can be used to mitigate data breaches in MDS AI models. However, residual risk can remain even after implementing encryption, due to sophisticated hacking techniques or human errors.</i><br><br>
+         Therefore, residual risk should be re-evaluated for each threat once the risk controls have been applied. Additional risk controls may need to be implemented if the residual risk is deemed unacceptable.</p>
+
+         <h3>Residual risk can be determined by following the steps below</h3>
+
+<div id="ro">
+    
+    <p>
+        <h4>Task 1: Reference the inherent risks determined in Phase 1</h4>
+        <ul>
+            <li>Risk scores calculated during <b><i>Activity 3 (Risk Estimation), </i></b><b><i>Step 1 (Risk Analysis)</i></b> of<b><i> Phase 1 (Risk Assessment)</i></b> are taken into account as inherent risk scores (They are the level of risks that exist before applying any of the risk controls).</li>
+            <li>Moreover, as per the risk accepatability criteria defined in <b><i>Step 2 (Risk Evaluation)</i></b> of <b><i>Phase 1 (Risk Assessment)</i></b> <i><b>"high"</b></i> and <i><b>"very high"</b></i> risks should be considered. <i>(Note that this might change based on the threshlold value you set. In this framework the threshold values is set as <b>"moderate"</b>)</i>.</li>
+        </ul>
+
+        
+</div>
+<div id="ro">
+          <h4>Task 2: Determine the Control effectiveness</h4>
+        <ul>
+            <li>The risk controls for each threat were already identified and implemented in Step 2: Implementation of Risk Controls of Phase 2: Risk Control. </li>
+            <li>Control effectiveness refers to the degree to which these implemented risk controls reduce the likelihood or impact of the threats, expressed as a scale (0-1).</li>
+            <li>To identify the control effectiveness the following approaches can be used:</li>
+            <ol>
+                <li>Expert judgement - In this method, qualified security practitioners assess the effectiveness of implemented controls based on their professional knowledge and experience.</li>
+                 <li>Penetration testing - In this method, the implemented controls are subjected to simulated attacks to evaluate their effectiveness in preventing the threat under consideration. <a href="overall-residual.html">Penetration testing</a></li>
+                 <li>Historical Data - In this method, the records of past incident data are reviewed to assess whether implemented controls have demonstrably reduced the likelihood or impact of similar threats in comparable operational contexts. </li>
+            </ol>
+            <li>It should be noted that the selection of the most applicable method depends on the expertise, resources, and data available to the implementing organisation.</li>
+           <li>A score between (0-1) should be assigned to represent the control effectiveness. Furthermore, if there are more than one control implemented the overall effectiveness should be considered by averaging the effectiveness of all controls together</li>
+        </ul>
+        <p>Following assessment scales can be used for assessing the <b>effectiveness of the controls</b>:</p>
+        <h6>Assessment Scales – Effectiveness of controls</h6>
+                <table class="table table-bordered mx-auto" style="width:80%">
+        <thead class="table-dark">
+            <thead>
+        <tr>
+            <th>Qualitative Values</th>
+            <th>Semi-Quantitative Values</th>
+            <th>Description</th>
+        </tr>
+        
+    </thead>
+    <tbody>
+        <tr>
+            <td>Very Strong</td>
+            <td>0.8-1.0</td>
+            <td><b>Very strong</b> means that the controls are properly implemented, very effective, and regularly tested. There is a high confidence that the controls significantly reduce both the likelihood and impact of the associated risk.</td>
+        </tr>
+        <tr>
+            <td>Strong</td>
+            <td>0.6-0.79</td>
+            <td><b>Strong</b> means that the controls are implemented generally effective in reducing risk, though minor gaps or limitations may exist. While the controls provide substantial risk reduction, they may not fully addressall attack vectors.</td>
+        </tr>
+        <tr>
+            <td>Moderate</td>
+            <td>0.4-0.59</td>
+            <td><b>Moderate</b> means that the controls are present but provide only partisl risk reduction. Implementation may be inconsistent or incomplete. Controls reduce either the likelihood or the impact of the risk, but not both in a comprehensive manner.</td>
+        </tr>
+        <tr>
+            <td>Weak</td>
+            <td>0.2-0.39</td>
+            <td><b>Weak</b> means that the controls are limited in scope or effectiveness and provide minimal risk reduction. They may be poorly implemented, outdated, or inconsistently applied. The controls provide a minimal protection against the threat and reducing the likelihood and/or benefit.</td>
+        </tr>
+        <tr>
+            <td>Very Weak</td>
+            <td>0.00-0.19</td>
+            <td><b>Very Weak</b> means that the controls are largely ineffective or very poorly implemented. The controls do not meaningfully reduce the likelihood and/or impact of the risk, resulting in a high degree of exposure.</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div id="ro">
+        <h4>Task 3: Determine the residual risk</h4>
+        <p><b>(1) Residual Risk Calculation</b></p>
+        <p>After indentifying the <b>inherent risk</b> and <b>control effectiveness</b>, the residual risk can be determined using the formula below:</p>
+     <p><b>Residual Risk = <span style="background-color: #ffff99; padding: 2px 5px; border-radius: 4px;">Inherant Risk * (1-Control Effectiveness)</span></b></p>
+
+      <!-- Risk Score Calculation Section -->
+<section style="background: #f0f8ff; border: 2px solid #087830; border-radius: 10px; padding: 20px; margin: 30px 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <h3 style="color: #087830; font-weight: bold;">📊 Residual Risk Calculator</h3>
+    <p><i>Use this calculator to determine the residual risk based on the inherent risk and control effectiveness.</i></p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+        <div>
+            <label for="inherent"><b>Inherent Risk:</b></label><br>
+            <input type="number" id="inherent" placeholder="Enter inherent risk" style="padding: 8px; width: 200px; border-radius: 5px; border: 1px solid #ccc;">
+        </div>
+        <div>
+            <label for="control effectiveness"><b>Control Effectiveness (a value between 0-1):</b></label><br>
+            <input type="number" id="control" placeholder="Enter Control Effectiveness (e.g., 0.8)" step="0.01" min="0" max="1" style="padding: 8px; width: 300px; border-radius: 5px; border: 1px solid #ccc;">
+        </div>
+        <div style="align-self: flex-end;">
+            <button onclick="calculateResidualRisk()" style="background: #087830; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">
+                Calculate Residual Risk
+            </button>
+        </div>
+    </div>
+    <p id="result" style="margin-top: 20px; font-size: 1.2em; font-weight: bold;"></p>
+</section>
+<p>
+        Upon calculating the residual risk score, the score should be analysed based on the following assessment scales to determine the level of residual risk:
+    </p>
+
+        <h6>Assessment Scales – Level of Residual Risk <b><i>(Semi-Quantitative)</i></b></h6>
+                <table class="table table-bordered mx-auto" style="width:80%">
+        <thead class="table-dark">
+            <thead>
+        <tr>
+            <th>Qualitative Values</th>
+            <th colspan="2">Semi-Quantitative Values</th>
+            <th>Description</th>
+        </tr>
+        
+    </thead>
+    <tbody>
+        <tr>
+            <td>Very High</td>
+            <td>96-100</td>
+            <td>10</td>
+            <td><b>Very high residual risk</b> means that a threat event could be expected to have <b>multiple severe or catastrophic</b> adverse effects on operations, assets, individuals, reputational harm or financial loss.</td>
+        </tr>
+        <tr>
+            <td>High</td>
+            <td>80-95</td>
+            <td>8</td>
+            <td><b>High residual risk</b> means that a threat event could be expected to have <b>severe or catastrophic</b> adverse effects on operations, assets, individuals, reputational harm or financial loss.</td>
+        </tr>
+        <tr>
+            <td>Moderate</td>
+            <td>21-79</td>
+            <td>5</td>
+            <td><b>Moderate residual risk</b> means that a threat event could be expected to have<b> serious</b> adverse effects on operations, assets, individuals, reputational harm or financial loss.</td>
+        </tr>
+        <tr>
+            <td>Low</td>
+            <td>5-20</td>
+            <td>2</td>
+            <td><b>Low risk residual risk</b> means that a threat event could be expected to have <b>limited </b>adverse effects on operations, assets, individuals, reputational harm or financial loss.</td>
+        </tr>
+        <tr>
+            <td>Very Low</td>
+            <td>0-4</td>
+            <td>0</td>
+            <td><b>Very low residual risk</b> means that a threat event could be expected to have <b>negligible</b> adverse effects on operations, assets, individuals, reputational harm or financial loss.</td>
+        </tr>
+    </tbody>
+</table>
+<p><b>(2) Qualitative - Residual Risk Determination</b></p>
+<p>In qualitative risk determination, to determine the level of residual risk, the <b>qualitative levels</b> of both <i><b>inherent risk</i></b> and <i><b>control effectiveness</i></b> should be analysed using the following assessment scales:</p>
+
+         <h6>Assessment Scales – Level of Residual Risk <b><i>(Qualitative)</i></b></h6>
+        
+   <table class="table table-bordered mx-auto" style="width:80%">
+        <thead class="table-dark">
+            <tr>
+            <th rowspan="2">Inherent Risk Level</th>
+            <th colspan="5"><center>Control Effectiveness</center></th>
+        </tr>
+        <tr>
+            <th>Very Strong</th>
+            <th>Strong</th>
+            <th>Moderate</th>
+            <th>Weak</th>
+            <th>Very Weak</th>
+        </tr>
+           </thead>
+        <tr>
+            <td><b>Very High</b></td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Moderate</td>
+            <td>High</td>
+            <td>Very High</td>
+        </tr>
+        <tr>
+            <td><b>High</b></td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Moderate</td>
+            <td>High</td>
+            <td>Very High</td>
+        </tr>
+        <tr>
+            <td><b>Moderate</b></td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Moderate</td>
+            <td>Moderate</td>
+            <td>High</td>
+        </tr>
+        <tr>
+            <td><b>Low</b></td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Low</td>
+            <td>Low</td>
+            <td>Moderate</td>
+        </tr>
+        <tr>
+            <td><b>Very Low</b></td>
+            <td>Very Low</td>
+            <td>Very Low</td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Low</td>
+        </tr>
+ </table>
+</div>
+<div id="ro">
+<h4>Task 4: Evaluate Residual Risk and Determine Acceptability</h4>
+
+
+    <p>
+        After determining the level of residual risk, it should be evaluated against the risk evaluation scales presented below to identify whether the residual risk level is <b>"acceptable", "tolerable" or "unacceptable"</b>.
+    </p>
+
+  
+        <h6>Example of evaluation scale combined with three-color risk matrix</h6>
+                <table class="table table-bordered mx-auto" style="width:80%">
+        <thead class="table-dark">
+<thead>
+        <tr>
+            <th>Level of Risk</th>
+            <th>Risk Evaluation</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Very low and Low <span style="color: green;">(Green)</span></td>
+            <td>Acceptable as is</td>
+            <td>The risk can be accepted without further action.</td>
+        </tr>
+        <tr>
+            <td>Moderate <span style="color: orange;">(Amber)</span></td>
+            <td>Tolerable under control</td>
+            <td>A follow-up in terms of risk management should be conducted and actions should be set up for continuous improvement over the medium and long term.</td>
+        </tr>
+        <tr>
+            <td>High and Very high <span style="color: red;">(Red)</span></td>
+            <td>Unacceptable</td>
+            <td>Measures for reducing the risk should absolutely be taken in the short-term. Otherwise, all or a portion of the activity should be refused.</td>
+        </tr>
+    </tbody>
+</table>
+
+    <p>If the risk level is <b>"unacceptable"</b> further risk control measures need to be implemented.</p>
+    <p>If the risk level is <b>"unacceptable"</b> and further risk control measures are not practical, <b>a benefit risk analysis</b> should be conducted.</p>
+</div>
+</div>
+        <div class="col-12" id="example1">
+  
+<h4><i>Example: Data theft threat on raw data at Stage1: Data Ingestion of the MDS AI model lifecycle</i></h4>
+<h4><b>Task 1: Reference the inherent risks determined in Phase 1</b></h4>
+            <p>As determined in the risk estimation example, the inherent risk score for the data theft threat at Stage 1: Data Ingestion is identified as <b>81.84</b>, which corresponds to
+                an overall risk level of <b>“High”</b>. This risk level is classified as <b>“Unacceptable”</b> according to the risk acceptability criteria confirming that risk controls must be implemented
+                and that residual risk evaluation is required following the implementation of the risk controls.</p>
+<h4><b>Task 2: Determine Control Effectiveness</b></h4>
+            <p>The controls implemented for data theft threat at the Data Ingestion stage are <i>access control, authentication and authorisation, cryptography, data masking, event logging, and auditing and data backups.</i></p>
+            <p><b>Control effectiveness for all controls</b></p>
+            <table class="table table-bordered mx-auto" style="width:80%">
+        <thead class="table-dark">
+<thead>
+        <tr>
+            <th>Risk Control</th>
+            <th>Control Effectiveness</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Access control</td>
+            <td>0.8</td>
+        </tr>
+        <tr>
+            <td>Authentication and authorisation</td>
+            <td>0.8</td>
+        </tr>
+        <tr>
+            <td>Cryptography</td>
+            <td>0.8</td>
+        </tr>
+        <tr>
+            <td>Data masking</td>
+            <td>0.8</td>
+        </tr>
+        <tr>
+            <td>Event logging and auditing</td>
+            <td>0.8</td>
+        </tr>
+        <tr>
+            <td>Data backups</td>
+            <td>0.7</td>
+        </tr>
+        <tr>
+            <td><b>Average Control Effectiveness</b></td>
+            <td><b>0.78</b></td>
+        </tr>
+    </tbody>
+</table>
+<p>This indicates <b>"Strong"</b> control effectiveness level.</p>
+<h4><b>Task 3: Determine Residual Risk</b></h4>
+            <p>When the residual risk formula is applied:</p>
+            <p>Residual Risk = Inherant Risk * (1-Control Effectiveness)</p>
+            <p>Residual Risk = 81.84 * (1-0.78)</p>
+            <p>Residual Risk = 18.00</p>
+            <p>This indicates that implementation of the risk control measures reduces the inherent risk score of 81.84 to a score of 18.00. This score is carried froward to Task 4 to determine the acceptability of the residual risk.</p>
+<h4><b>Task 4: Evaluate Residual Risk and Determine Acceptability</b></h4>
+            <p>The residual risk score of 18.00 falls within the Low score range of 5-20, indicating a residual risk level of “Low” </p>
+            <p>As per the risk acceptability criteria a residual risk of “Low” indicates an acceptability classification of “Acceptable”, where no further action is required.</p>
+        </div>
+</div>
+</div>
+          
+     <!-- copyright -->
+    <div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                    Copyright © 2026 Buddhika Jayaneththi
+                </div>
+                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                    <a href="mailto:buddhika.jayaneththi@dkit.ie" class="d-inline-block text-center ml-2">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/buddhika-gayashani/" class="d-inline-block text-center ml-2" target="_blank">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    
+    <!-- AOS -->
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+      });
+    </script>
+
+    <script>
+        function calculateResidualRisk() {
+            // Get input values
+            let inherentRisk = parseFloat(document.getElementById("inherent").value);
+            let controlEffectiveness = parseFloat(document.getElementById("control").value);
+
+            // Validate inputs
+            if (isNaN(inherentRisk) || isNaN(controlEffectiveness) || controlEffectiveness < 0 || controlEffectiveness > 1) {
+                document.getElementById("result").innerHTML = "Please enter valid numbers (Control Effectiveness should be between 0 and 1)";
+                document.getElementById("result").style.color = "red";
+                return;
+            }
+
+            // Calculate Residual Risk
+            let residualRisk = inherentRisk * (1 - controlEffectiveness);
+
+            // Display result
+            document.getElementById("result").innerHTML = `Residual Risk: <span style="color:blue;">${residualRisk.toFixed(2)}</span>`;
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
