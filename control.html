@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DSRMF</title>
+    <meta name="description" content="Free bootstrap template Atlas">
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css">
+
+        <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+
+ <link rel="stylesheet" href="css/menu.css">
+     
+</head>
+
+<body style="background: linear-gradient(90deg, #e9f0ea, #ffffff); background-color: #e9f0ea;">
+    
+        <nav style="display: flex; justify-content: space-between; align-items: center; background: #000039; padding: 0px;">
+    
+    <!-- Main Menu -->
+    <ul class="top-bar" style="display: flex; list-style: none; margin: 0; padding: 0;">
+        <li style="margin-right: 20px;"><a href="index.html" style="color: white; text-decoration: none;">Home: The Risk Management Process</a></li>
+        <li style="margin-right: 20px; position: relative;">
+            <a href="#" style="color: white; text-decoration: none;">Phase 1: Risk Assessment ▼</a>
+            <ul class="dropdown">
+                <li>
+                    <a href="#" style="color: white; text-decoration: none;">Step 1: Risk Analysis ►</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="analysis-step2.html">Activity 1: Identification of Intended use and characteristics related to data security and privacy</a></li>
+                        <li><a href="analysis-step3.html">Activity 2: Identification of assets, threats and vulnerabilities</a></li>
+                        <li><a href="analysis-step4.html">Activity 3: Risk Estimation</a></li>
+                    </ul>
+                    <a href="evaluation.html" style="color: white; text-decoration: none;">Step 2: Risk Evaluation ►</a>
+                </li>
+            </ul>
+        </li>
+        <li style="margin-right: 20px;">
+            <a href="control.html" style="color: white; text-decoration: none;">Phase 2: Risk Control ▼</a>
+            <ul class="dropdown">
+                <li><a href="control.html">Step 1: Risk Control Option Analysis</a></li>
+                <li><a href="mapping3.drawio.html">Step 2: Identification and Implementation of Risk Controls</a></li>
+                <li><a href="residual.html">Step 3: Residual Risk Evaluation</a></li>
+                <li><a href="benefit.html">Step 4: Benefit-Risk Analysis</a></li>
+            </ul>
+        </li>
+        <li style="margin-right: 20px;"><a href="overall-residual.html" style="color: white; text-decoration: none;">Phase 3: Evaluation of Overall Residual Risk Acceptability</a></li>
+        <li><a href="RMreport.html" style="color: white; text-decoration: none;">Phase 4: Preparation of the Risk Management Report</a></li>
+    </ul>
+
+    <!-- Home, Back, Next Buttons -->
+    <div style="display: flex; gap: 10px;">
+        <a href="evaluation.html" style="background:#6c757d; color:white; padding:8px 15px;
+              border-radius:6px; text-decoration:none; font-weight:bold;
+              width:140px; text-align:center;">Previous Step</a>
+        <a href="implementation.html" style="background:#28a745; color:white; padding:8px 15px;
+              border-radius:6px; text-decoration:none; font-weight:bold;
+              width:140px; text-align:center;">Next Step</a>
+    </div>
+</nav>
+
+    <div class="container mt-5">
+    <div>
+    <h2 class="text-center font-weight-bold my-5"><i>Phase 2: Step 1:</i><br>Risk Control Option Analysis</h2>
+</div>
+
+        <div class="row">
+            <p>
+                Upon completion of identifying the unacceptable risks as detailed in Phase 1, the next step is to treat the identified unacceptable risks. There are three options for risk treatment, as follows:
+            </p>
+        </div>
+        <div id="ra">
+            <h4>
+               Risk Avoidance
+            </h4>
+            <p>
+                Risk avoidance involves taking specific actions to eliminate the activities or technologies that give rise to the risk, or revise or reposition these activities or technologies to avoid the potential for unacceptable risks. 
+           </p>
+          
+                <h5>Risk Avoidance Process</h5><br>
+                
+           <p>The risk avoidance process comprises the following steps: </p>
+           <center>
+            <img src="img/avoid.png" width="700px" height="300px">
+            <br>
+            </center>
+
+            <ol>
+                <li><b>Reference the unacceptable risks identified in <i>phase 1, step 2</i> </b> - Consider the unacceptable risks identified in phase 1, step 2.</li>
+                <li><b>Assess avoidability</b> - Evaluate whether there are practical alternative approaches, methods, or decisions that could completely eliminate or significantly reduce the exposure to the risk. If risk avaoidance is not possible consider <i><b>Risk Mitigation/Reduction</i></b>.</li>
+                <li><b>Identify preventive strategies</b> - These strategies might include using alternative approaches, modifying existing processes, or choosing not to participate in specific activities or decisions altogether. </li>
+                 <li><b>Implement preventive strategies</b> - Implement the identified preventive measures which might include revising plans, altering processes, and choosing not to participate in specific activities to effectively avoid the risks.</li>
+                 <li><b>Monitor and review</b> - Regularly monitor and evaluate progress to confirm that the planned risk avoidance strategies are being implemented effectively and that any emerging risks are identified and managed without delay.  </li>
+                 <li><b>Make changes as required</b> - If new risks arise or the current risk avoidance measures prove inadequate, modify or improve the strategies as needed.</li>
+            </ol>   
+            <br>
+            <p><i><b>Example:</b> Risk of data leakage in training an AI model with sensitive patient data</p>
+            <p>
+                <b>Risk:</b> Training the AI model on raw patient data which may lead to accidental data leakage
+            </p>
+            <p>
+               <b> Risk Control Option: </b>Risk avoidance <br>
+               Do not train the AI model using sensitive or personally identifiable information (PII), instead use synthetic data or rely on public anonymised data sets that do not contain PII.</i>
+            </p>
+          </div>
+             <div id="rs">
+            <h4>
+               Risk Sharing or Transfer
+            </h4>
+            <p>
+               During risk sharing/transfer, the risk is partially or fully shared with, or transferred to, another party. It is an appropriate risk response when there is a possibility to share or transfer the liability and responsibility associated with the risk to another party. It is important to note that risk transfer neither reduces the likelihood nor the impact of the risk. Rather, it involves sharing of liability or responsibility for other adequate risk responses such as mitigation. Risk sharing is usually applied when addressing a risk requires expertise or resources that are better provided by another party.
+            </p>
+                <h5>Risk Transfer Process</h5>
+            <p>The risk transfer process comprises the following steps: </p>
+           <center>
+            <img src="img/trans.png" width="700px" height="300px">
+            <br>
+            </center>
+            <ol>
+                <li><b>Reference the unacceptable risks identified in <i>phase 1, step 2</i> </b> - Consider the unacceptable risks identified in phase 1, step 2.</li>
+                <li><b>Assess transferability</b> - Evaluate whether there is a possibility of transfering the liability and/or responsibility  fully or partially to another party. If risk transfer/sharing is not possible, consider <i><b> Risk Mitigation/Reduction</b></i> </li>
+                <li><b>Identify suitable risk transference strategies</b> - These strategies might inlcude the following. 
+                        <ul>
+                            <li>Insurance - One of the primary and most widely used methods of risk transfer is obtaining a comprehensive insurance policy. Companies often secure insurance from various providers to ensure protection in case of emergencies.</li>
+                            <li>Contracts - Form agreements with suppliers, contractors, and other third parties that specify a shared responsibility for certain risks.
+                            </li>
+                            <li>Joint ventures - Partner through collaborations and joint ventures with other organisations to reduce and transfer some operational risks. Such arrangements allow organisations to share resources, knowledge, and accountability, ensuring the risk is more equally divided among the parties involved.
+                            </li>
+                            <li>Outsourcing - Assign specific tasks to other professionals or contractors to carry out on your behalf.
+                            </li>
+                            <li>Subcontracting - Similar to outsourcing, this involves assigning particular tasks or processes to an external company. This method allows the primary organisation to shift a portion of the project's risk to the subcontractor, who then becomes responsible for managing those designated activities.
+                            </li>
+                        </ul>
+                </li>
+                 <li><b>Implement the strategies</b> - Implement the identified transference strategies. </li>
+                 <li><b>Monitor and Review</b> - Regularly monitor and evaluate progress to ensure that the planned risk transference strategies are being implemented effectively and that any emerging risks are identified and managed promptly.  </li>
+                 <li><b>Make changes as required</b> - If new risks arise or the current risk transference measures prove inadequate, modify or improve the strategies as needed. </li>
+            </ol>   
+            
+            <p><i><b>Example:</b> A medical device company develops an AI-powered radiology system that assists radiologists in diagnosing conditions from CT and MRI scans. The device captures and processes sensitive patient imaging data, which is sent to a cloud-based AI model for analysis.</p>
+            <p>
+                <b>Risk:</b> A data breach in the cloud could compromise the security and privacy of personally identifiable information (PII) and sensitive health data.
+            </p>
+            <p>
+               <b> Risk Control Option: </b>Risk transference <br>
+               <br>
+               The risk can be transfered by:<br>
+               <ul>
+                <li>Obtaining a cybersecurity insurance policy that covers the financial costs associated with a data breach, including notifying affected individuals, providing credit monitoring services, and covering legal and regulatory fees.</li>
+                 
+            </ul>
+           </i>
+            </p>
+          </div>
+          <div class="row" id="rm">
+            <h4>
+               Risk Mitigation/Reduction
+            </h4>
+            <p>
+                Risk mitigation or reduction is the appropriate risk response for the portions of risk that cannot be avoided, shared or transferred. Necessary risk controls should be implemented to mitigate these risks. This framework provides a comprehensive list of assets, threats, vulnerabilities, controls, and control implementation details on <a href="mapping3.drawio.html">Next</a> page. 
+            </p><br>
+            </div>
+            <div>
+            <p><b>All unacceptable risks should be evaluated by considering the above risk treatment options. Risks that require mitigations, can be shared/transferred, or can be avoided should be listed separately in the risk management report, along with the rationale for each decisions.</b> </p>
+        </div>
+        </div>
+
+    </div>
+     <!-- copyright -->
+    <div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                    Copyright © 2026 Buddhika Jayaneththi
+                </div>
+                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                    <a href="mailto:buddhika.jayaneththi@dkit.ie" class="d-inline-block text-center ml-2">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/buddhika-gayashani/" class="d-inline-block text-center ml-2" target="_blank">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    
+    <!-- AOS -->
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+      });
+    </script>
+</body>
+
+</html>

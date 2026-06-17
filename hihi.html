@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rounded Box with Long Arrow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Space between elements */
+        }
+        .rounded-box {
+            width: 220px;
+            height: 120px;
+            background-color: lightblue;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            padding: 10px;
+        }
+        .inner-container {
+            display: flex; /* Arrange inner boxes in a row */
+            gap: 10px; /* Space between inner divs */
+        }
+        .inner-box, .second-box {
+            width: 80px;
+            height: 40px;
+            background-color: lightcoral;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: normal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .second-box {
+            background-color: lightgreen; /* Different color for differentiation */
+        }
+        .arrow {
+            font-size: 40px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="rounded-box">Start</div>
+        <div class="arrow">&#10230;</div> 
+        
+        <!-- Outer Rounded Box -->
+        <div class="rounded-box">
+            End
+            <!-- New div wrapper to align elements in a row -->
+            <div class="inner-container">
+                <div class="inner-box">Info 1</div>
+                <div class="second-box">Info 2</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DSRMF</title>
+    <meta name="description" content="Free bootstrap template Atlas">
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css">
+
+ <link rel="stylesheet" href="css/menu.css">
+
+   <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+     
+</head>
+
+<body style="background: linear-gradient(90deg, #e9f0ea, #ffffff); background-color: #e9f0ea;">
+    
+        <nav style="display: flex; justify-content: space-between; align-items: center; background: #000039; padding: 0px;">
+    
+    <!-- Main Menu -->
+    <ul class="top-bar" style="display: flex; list-style: none; margin: 0; padding: 0;">
+        <li style="margin-right: 20px;"><a href="index.html" style="color: white; text-decoration: none;">Home: The Risk Management Process</a></li>
+        <li style="margin-right: 20px; position: relative;">
+            <a href="#" style="color: white; text-decoration: none;">Phase 1: Risk Assessment ▼</a>
+            <ul class="dropdown">
+                <li>
+                    <a href="#" style="color: white; text-decoration: none;">Step 1: Risk Analysis ►</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="analysis-step2.html">Activity 1: Identification of Intended use and characteristics related to data security and privacy</a></li>
+                        <li><a href="analysis-step3.html">Activity 2: Identification of assets, threats and vulnerabilities</a></li>
+                        <li><a href="analysis-step4.html">Activity 3: Risk Estimation</a></li>
+                    </ul>
+                    <a href="evaluation.html" style="color: white; text-decoration: none;">Step 2: Risk Evaluation ►</a>
+                </li>
+            </ul>
+        </li>
+        <li style="margin-right: 20px;">
+            <a href="control.html" style="color: white; text-decoration: none;">Phase 2: Risk Control ▼</a>
+            <ul class="dropdown">
+                <li><a href="control.html">Step 1: Risk Control Option Analysis</a></li>
+                <li><a href="mapping3.drawio.html">Step 2: Identification and Implementation of Risk Controls</a></li>
+                <li><a href="residual.html">Step 3: Residual Risk Evaluation</a></li>
+                <li><a href="benefit.html">Step 4: Benefit-Risk Analysis</a></li>
+            </ul>
+        </li>
+        <li style="margin-right: 20px;"><a href="overall-residual.html" style="color: white; text-decoration: none;">Phase 3: Evaluation of Overall Residual Risk Acceptability</a></li>
+        <li><a href="RMreport.html" style="color: white; text-decoration: none;">Phase 4: Preparation of the Risk Management Report</a></li>
+    </ul>
+
+    <!-- Home, Back, Next Buttons -->
+    <div style="display: flex; gap: 10px;">
+        <a href="residual.html" style="background:#6c757d; color:white; padding:8px 15px;
+              border-radius:6px; text-decoration:none; font-weight:bold;
+              width:140px; text-align:center;">Previous Step</a>
+        <a href="overall-residual.html" style="background:#28a745; color:white; padding:8px 15px;
+              border-radius:6px; text-decoration:none; font-weight:bold;
+              width:110px; text-align:center;">Next Step</a>
+    </div>
+</nav>
+
+    <div class="container mt-5">
+    <div>
+    <h2 class="text-center font-weight-bold my-5"><i>Phase 2: Step 4:</i><br>Benefit Risk Analysis </h2>
+</div>
+<div class="col-12">
+
+    <p>A benefit-risk analysis should be performed for the residual risks that are judged <b>unacceptable</b> (identified in step 3) and for which <b>further risk control is not practicable</b>. The benefit-risk analysis is used to determine whether the residual risk is outweighed by the clinical benefit of the specific feature or design capability that gives rise to the risk.It is important to note that practicability of further risk reduction should be evaluated before initiating a benefit-risk analysis.</p>
+    <p>Practicability of further risk control measures can be evaluated by considering the following:</p>
+    <ol>
+        <li>Technical feasibility of the controls - Whether it is possible to implement the control with available technology and resources?</li>
+        <li>Possibility of arising new risks - Whethere there is a possibility of introducing new risks, following the implementation of controls?</li>
+        <li>Clinical performance assessment - Would the new control affect diagnosis decisions? Would it delay treatment decisions? Would it affect intended use of the MDS AI model?</li>
+    </ol>
+    <p>To conduct benefit-risk analysis, the following activities should be followed:
+        <ol>
+            <li><b>Determine Expected Clincal Benefit</b></li>
+            <li><b>Determine Risk</b></li>
+            <li><b>Compare Benefit-Risk</b></li>
+            <li><b>Determine acceptability</b></li>
+        </ol>
+
+    </p>
+</div>
+
+<div class="col-12" id="ra">
+    <h4>(1) Determine Expected Clinical Benefit</h4>
+    <p>The clinical benefit assessed in this activity is the direct clinical contribution of the specific feature giving rise to the risk to the intended clinical purpose and patient outcomes of the MDS AI model. Specifically, the degree to which the feature enables the MDS AI model to achieve its intended clinical purpose and deliver positive outcomes to patients.</p>
+    <p>
+The following factors need to be identified before calculating the benefit:
+<ul>
+    <li>The feature giving risk to the risk - The asset-threat mapping established in Phase 1: Risk Assessment can be used as input for identifying the specific assets, or process componenet that introduces the risk.</li>
+    <li>The clinical role of the feature - Determine the significance of the feature in achieving the intended clinical purpose and direct contribution to patient outcomes</li>
+</ul>
+<p>The expected clinical benefit is derived based on the <b>Probability</b> and <b>Magnitude</b> defined as follows:</p>
+<ul>
+    <li><b>Probability</b> - the likelihood that the feature directly contributes to the positive patient outcomes via its role in the MDS AI model lifecycle.</li>
+    <li><b>Magnitude</b> - the degree and significance of clinical contribution the feature makes to achieving the intended clinical purpose of the MDS AI model and to the to the expected positive patient outcomes.</li>
+</ul>
+<h4>Probability Assessment</h4>
+<p>The following assessment scales can be used to assess the probability.</p>
+</p>
+                <h6>Assessment Scales - Probability</h6>
+                <table class="table table-bordered mx-auto" style="width:80%">
+        <thead class="table-dark">
+            <thead>
+        <tr>
+            <th>Qualitative Values</th>
+            <th colspan="2">Semi-Quantitative Values</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+<tbody>
+    <tr>
+        <td>Very High</td>
+        <td>96–100</td>
+        <td>10</td>
+        <td >It is <b>almost certain</b> that the feature directly contributes to positive patient outcomes through its role in the MDS AI model lifecycle. The feature is a critical enabler of the model's intended clinical purpose</td>
+    </tr>
+    <tr>
+        <td>High</td>
+        <td>80–95</td>
+        <td>8</td>
+        <td >It is <b>highly likely</b> that the feature directly contributes to positive patient outcomes. The feature plays a significant role in enabling the MDS AI model to achieve its intended clinical purpose</td>
+    </tr>
+    <tr>
+        <td>Moderate</td>
+        <td>21–79</td>
+        <td>5</td>
+        <td >It is <b>somewhat likely </b> the feature directly contributes to positive patient outcomes. It plays a measurable but not critical role in the intended clinical purpose of the MDS AI model</td>
+    </tr>
+    <tr>
+        <td>Low</td>
+        <td>5–20</td>
+        <td>2</td>
+        <td >It is <b>unlikely</b> that the feature directly contributes to positive patient outcomes. Its role in the intended clinical purpose of the MDS AI model is limited</td>
+    </tr>
+    <tr>
+        <td>Very Low</td>
+        <td>0–4</td>
+        <td>0</td>
+        <td>It is <b>highly unlikely</b> that the feature directly contributes to positive patient outcomes. It does not play a significant role in the intended clinical purpose of the MDS AI model</td>
+    </tr>
+</tbody>
+
+</table>
+<h4>Magnitude Assessment</h4>
+<p>The following assessment scales can be used to assess the magnitude. The Very High level should be reserved for features that are fully irreplaceable to the model's core clinical purpose. </p>
+
+        <h6>Assessment Scales - Magnitude</h6>
+                <table class="table table-bordered mx-auto" style="width:80%">
+        <thead class="table-dark">
+            <thead>
+        <tr>
+            <th>Qualitative Values</th>
+            <th colspan="2">Semi-Quantitative Values</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+<tbody>
+    <tr>
+        <td>Very High</td>
+        <td>96–100</td>
+        <td>10</td>
+        <td>The feature makes a <b>critical or transformative</b> clinical contribution. It is essential to the MDS AI model achieving its intended clinical purpose and directly enables major positive impact on patient outcomes. This level should be reserved for features that are fully irreplaceable to the model's core clinical purpose</td>
+    </tr>
+    <tr>
+        <td>High</td>
+        <td>80–95</td>
+        <td>8</td>
+        <td>The feature makes a <b>significant</b> clinical contribution. It meaningfully enables the MDS AI model to achieve its intended clinical purpose and contributes clearly to improved patient outcomes, though comparable clinical purpose may be achievable through other means</td>
+    </tr>
+    <tr>
+        <td>Moderate</td>
+        <td>21–79</td>
+        <td>5</td>
+        <td>The feature makes a <b>moderate</b> clinical contribution. It contributes measurably to the MDS AI model's intended clinical purpose but is not essential and could be partially substituted</td>
+    </tr>
+    <tr>
+        <td>Low</td>
+        <td>5–20</td>
+        <td>2</td>
+        <td>The feature makes a <b>limited</b> clinical contribution. Its role in the MDS AI model's intended clinical purpose is minor and of marginal significance</td>
+    </tr>
+    <tr>
+        <td>Very Low</td>
+        <td>0–4</td>
+        <td>0</td>
+        <td>The feature makes <b>minimal or negligible</b> clinical contribution. It does not enable or enhance the MDS AI model's ability to achieve its intended medical purpose</td>
+    </tr>
+</tbody>
+
+</table>
+</p>
+<p><b>(1) Benefit Value Calculation</b></p>
+    <p>After identifying the <b>probability</b> and <b>magnitude</b> qualitative values  assign the corresponding bins values and calculate the benefit value using the formula below:</p>
+     <p><b>Benefit Value = <span style="background-color: #ffff99; padding: 2px 5px; border-radius: 4px;">Probability * Magnitude</span></b></p>
+     <p>
+        <b><i>Probability</i></b> – <i>Bins value corresponding to the qualitative probability level assigned using the scale above</i><br>
+        <b><i>Magnitude</i></b> – <i>Bins value corresponding to the qualitative magnitude level assigned using the scale above</i></p>
+
+              <!-- Benefit value Calculation Section -->
+<section style="background: #f0f8ff; border: 2px solid #087830; border-radius: 10px; padding: 20px; margin: 30px 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <h3 style="color: #087830; font-weight: bold;">📊 Benefit Value Calculator</h3>
+    <p><i>Use this calculator to determine the benefit value using the probability and the magnitude.</i></p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+        <div>
+            <label for="probability"><b>Probability:</b></label><br>
+            <input type="number" id="probability" placeholder="Enter probability" style="padding: 8px; width: 200px; border-radius: 5px; border: 1px solid #ccc;">
+        </div>
+        <div>
+            <label for="magnitude"><b>Magnitude:</b></label><br>
+            <input type="number" id="magnitude" placeholder="Enter magnitude" style="padding: 8px; width: 300px; border-radius: 5px; border: 1px solid #ccc;">
+        </div>
+        <div style="align-self: flex-end;">
+            <button onclick="calculateBenefitValue()" style="background: #087830; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">
+                Calculate Benefit Value
+            </button>
+        </div>
+    </div>
+
+    <p id="result1" style="margin-top: 20px; font-size: 1.2em; font-weight: bold;"></p>
+</section>
+
+<p><b>(2) Qualitative - Benefit Determination</b></p>
+<p>In qualitative benefit determination, to determine the overall benefit level, the <b>qualitative levels</b> of both <i><b>probability</i></b> and <i><b>magnitude</i></b> should be analysed using the following assessment scales:</p>
+
+         <h6>Assessment Scales – Overall Level of Benefit<b><i>(Qualitative)</i></b></h6>
+        
+   <table class="table table-bordered mx-auto" style="width:80%">
+        <thead class="table-dark">
+            <tr>
+            <th rowspan="2">Probability of  expected clinical benefits</th>
+            <th colspan="5"><center>Magnitude of the expected clinical benefits</center></th>
+        </tr>
+        <tr>
+            <th>Very Low</th>
+            <th>Low</th>
+            <th>Moderate</th>
+            <th>High</th>
+            <th>Very High</th>
+        </tr>
+           </thead>
+        <tr>
+            <td><b>Very High</b></td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Moderate</td>
+            <td>High</td>
+            <td>Very High</td>
+        </tr>
+        <tr>
+            <td><b>High</b></td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Moderate</td>
+            <td>High</td>
+            <td>Very High</td>
+        </tr>
+        <tr>
+            <td><b>Moderate</b></td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Moderate</td>
+            <td>Moderate</td>
+            <td>High</td>
+        </tr>
+        <tr>
+            <td><b>Low</b></td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Low</td>
+            <td>Low</td>
+            <td>Moderate</td>
+        </tr>
+        <tr>
+            <td><b>Very Low</b></td>
+            <td>Very Low</td>
+            <td>Very Low</td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Low</td>
+        </tr>
+ </table>
+</div>
+
+ <!-- risk value -->
+
+    <div class="col-12" id="rm">
+    <h4>(2) Determine Risk </h4>
+    The risk values are already calculated in the  
+    <a href="residual.html">Residual Risk Evaluation phase.</a>The values for each <b>unacceptable residual risks <i>(high and very high)</i>, for which further risk control is not practicable,</b> are are carried forward directly to this activity.
+    </p>
+    <p><b>(1) Semi-Quantitative - Residual Risk Determination</b></p>
+    <h6>Assessment Scales – Level of Residual Risk <b><i>(Semi-Quantitative)</i></b></h6>
+                <table class="table table-bordered mx-auto" style="width:80%">
+        <thead class="table-dark">
+            <thead>
+        <tr>
+            <th>Qualitative Values</th>
+            <th colspan="2">Semi-Quantitative Values</th>
+            <th>Description</th>
+        </tr>
+        
+    </thead>
+    <tbody>
+        <tr>
+            <td bgcolor="#f08080">Very High</td>
+            <td bgcolor="#f08080">96-100</td>
+            <td bgcolor="#f08080">10</td>
+            <td bgcolor="#f08080"><b>Very high residual risk</b> means that a threat event could be expected to have <b>multiple severe or catastrophic</b> adverse effects on operations, assets, individuals, reputational harm or financial loss.</td>
+        </tr>
+        <tr>
+            <td bgcolor="#f08080">High</td>
+            <td bgcolor="#f08080">80-95</td>
+            <td bgcolor="#f08080">8</td>
+            <td bgcolor="#f08080"><b>High residual risk</b> means that a threat event could be expected to have <b>severe or catastrophic</b> adverse effects on operations, assets, individuals, reputational harm or financial loss.</td>
+        </tr>
+        <tr>
+            <td>Moderate</td>
+            <td>21-79</td>
+            <td>5</td>
+            <td><b>Moderate residual risk</b> means that a threat event could be expected to have<b> serious</b> adverse effects on operations, assets, individuals, reputational harm or financial loss.</td>
+        </tr>
+        <tr>
+            <td>Low</td>
+            <td>5-20</td>
+            <td>2</td>
+            <td><b>Low risk residual risk</b> means that a threat event could be expected to have <b>limited </b>adverse effects on operations, assets, individuals, reputational harm or financial loss.</td>
+        </tr>
+        <tr>
+            <td>Very Low</td>
+            <td>0-4</td>
+            <td>0</td>
+            <td><b>Very low residual risk</b> means that a threat event could be expected to have <b>negligible</b> adverse effects on operations, assets, individuals, reputational harm or financial loss.</td>
+        </tr>
+    </tbody>
+</table>
+<p><b>(2) Qualitative - Residual Risk Determination</b></p>
+
+         <h6>Assessment Scales – Level of Residual Risk <b><i>(Qualitative)</i></b></h6>
+        
+   <table class="table table-bordered mx-auto" style="width:80%">
+        <thead class="table-dark">
+            <tr>
+            <th rowspan="2">Inherent Risk Level</th>
+            <th colspan="5"><center>Control Effectiveness</center></th>
+        </tr>
+        <tr>
+            <th>Very Strong</th>
+            <th>Strong</th>
+            <th>Moderate</th>
+            <th>Weak</th>
+            <th>Very Weak</th>
+        </tr>
+           </thead>
+        <tr>
+            <td><b>Very High</b></td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Moderate</td>
+            <td bgcolor="#f08080">High</td>
+            <td bgcolor="#f08080">Very High</td>
+        </tr>
+        <tr>
+            <td><b>High</b></td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Moderate</td>
+            <td bgcolor="#f08080">High</td>
+            <td bgcolor="#f08080">Very High</td>
+        </tr>
+        <tr>
+            <td><b>Moderate</b></td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Moderate</td>
+            <td>Moderate</td>
+            <td bgcolor="#f08080">High</td>
+        </tr>
+        <tr>
+            <td><b>Low</b></td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Low</td>
+            <td>Low</td>
+            <td>Moderate</td>
+        </tr>
+        <tr>
+            <td><b>Very Low</b></td>
+            <td>Very Low</td>
+            <td>Very Low</td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Low</td>
+        </tr>
+ </table>
+</div>
+
+<div class="col-12" id="rs">
+    <h4> (3) Compare benefit-risk </h4>
+    <br>
+    <p><b>(1) Determine benefit-risk Ratio</b></p>
+    <p>
+   Following the benefit value and risk values are determined, the benefit-risk ratio should be determined using the formula below:
+    </p>
+<p><b>Benefit-Risk Ratio  = <span style="background-color: #ffff99; padding: 2px 5px; border-radius: 4px;">Benefit Value/Risk Value</span></b></p>
+
+        <!-- Benefit value Calculation Section -->
+<section style="background: #f0f8ff; border: 2px solid #087830; border-radius: 10px; padding: 20px; margin: 30px 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <h3 style="color: #087830; font-weight: bold;">📊 Benefit-risk Ratio Calculator</h3>
+    <p><i>Use this calculator to determine the benefit-risk ratio using the benefit value and the risk value.</i></p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+        <div>
+            <label for="benefit"><b>Benefit Value:</b></label><br>
+            <input type="number" id="benefit" placeholder="Enter benefit value" step="0.1" style="padding: 8px; width: 200px; border-radius: 5px; border: 1px solid #ccc;">
+        </div>
+        <div>
+            <label for="risk"><b>Risk Value:</b></label><br>
+            <input type="number" id="risk" placeholder="Enter risk value" step="0.1"style="padding: 8px; width: 300px; border-radius: 5px; border: 1px solid #ccc;">
+        </div>
+        <div style="align-self: flex-end;">
+            <button onclick="calculateBenefitRiskRatio()" style="background: #087830; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">
+                Calculate Benefit-risk Ratio
+        </div>
+    </div>
+    <p id="result2" style="margin-top: 20px; font-size: 1.2em; font-weight: bold;"></p>
+</section>
+     <p>
+            It should be noted that this approach assigns a value to each individual benefit and risk; it does not sum all risks or benefits to obtain a single value for each. This results in the identification of a pairwise comparison between each risk and each benefit. Although summarising benefits and risks to singular values would certainly present a clean summary with a singular benefit-risk ratio, such a method would lose the granularity that allows for an in-depth analysis of benefit and risk.
+        </p>
+    </div>
+
+    <div>
+       
+        
+    </div>
+    <div class="col-12" id="rn">
+    <h4>(4) Determine Acceptability</h4>
+    <p>The acceptability of the benefit-risk comparison is determined by evaluating the ratio against <b>Condition 1</b> and confirming through a mandatory expert multidisciplinary review <b>(Condition 2)</b>. </p>
+    <p><b>Condition 1 — Benefit-Risk Ratio > 1</b></p>
+    <ul>
+        <li>A benefit-risk ratio greater than 1 constitutes the primary numerical condition for acceptability, indicating that the feature-level clinical contribution benefit outweighs the residual security risk. A ratio below 1 indicates the residual risk outweighs the benefit. </li>
+    </ul>
+    </ul>
+    <p><b>Condition 2 — Expert Multidisciplinary Review</b></p>
+    <ul>
+        <li>Relying solely on the numerical ratio is insufficient. Therefore, expert judgement by a multidisciplinary team is incorporated as a mandatory element of the acceptability determination.</li>
+        <li>The multidisciplinary review team comprising <b>medical and clinical experts, cybersecurity specialists, regulatory professionals, and AI application experts</b> must review the benefit-risk ratio within its complete clinical and cybersecurity context before a final determination of acceptable or not acceptable is reached. The team evaluates whether the ratio accurately reflects the clinical contribution of the feature relative to the residual security risk, and confirms the acceptability determination.</li>
+    </ul>
+    <p>If analysis determined that the risks are outweighted by the benefits the manufacturer should determine what information should be communicated in labeling to manage this residual risk. Moreover, this needs to be communicated in such a way that it does not provide a blueprint for a potential attacker to exploit the non-mitigated vulnerability.</p>
+</div>
+<div class="col-12" id="example1">
+  
+<h4><i>Example: Data theft threat on raw data at Stage1: Data Ingestion of the MDS AI model lifecycle</i></h4>
+<p><b>(1) Determine Expected Clinical Benefit</b></p>
+<ul>
+<li>Feature giving rise to the risk: Collection of raw patient data creates a data asset that is valuable to attacker.</li>
+</ul>
+<p><b>Probability Assessment</b></p>
+<ul>
+    <li>Raw data is the direct and primary source from which the model learns the clinically relevant patterns and determines its diagnostic accuracy which established a direct link between the feature and positive patient outcomes and making the contribution maximally specific. Therefore, this supports a <b>“Very High”</b> probability level where it is almost certain that collection of raw patient data directly contributes to positive patient outcomes through its role in the MDS AI model lifecycle.
+The qualitative level of “Very High” corresponds to a bins value of <b>10</b> as per the semi-quantitative assessment scales.</li>
+</ul>
+<p><b>Magnitude Assessment</b></p>
+<ul>
+    <li>Collection of raw data directly helps in determining the accuracy of model’s decisions, clinical representativeness, and diagnostic validity of its outputs, highlighting core dimensions of the intended clinical purpose of the model. However, the magnitude is assessed as <b>“High”</b>, rather than Very High because there is a possibility that the model could use synthetic data instead of raw data, and achieve comparable clinical purpose. Therefore, the contribution does not meet the fully irreplaceable threshold required for Very High level.</li>
+    <li>The qualitative level of <b>“High”</b> corresponds to a bins value of <b>8</b> as per the semi-quantitative assessment scales.</li>
+</ul>
+<p><b>Benefit Determination</b></p>
+<ul>
+    <li>Benefit Value = Probability * Magnitude<br>
+Benefit Value = 10 * 80 <br>
+Benefit Value = 80
+</li>
+</ul>
+<p><b>(2) Determine Risk</b></p>
+<p>Let’s assume that the residual risk value determined in Step 3: Residual Risk Evaluation is <b>90</b> which represents a <b>“High”</b> residual risk.</p>
+<p><b>(3) Compare Benefit-Risk</b></p>
+<ul>
+    <li>Benefit Risk Ratio = 80/90 <br>
+Benefit Risk Ratio = 0.88
+</li>
+</ul>
+<p><b>(4) Determine Acceptability</b></p>
+<ul><li>The benefit risk ratio (0.88) is determined as <1, reflecting that the residual risk is outweighed by the benefit. However, to make the final decision of acceptability expert judgement should be taken into consideration as recommended.</li></ul>
+</div>
+</div>
+          
+     <!-- copyright -->
+    <div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                    Copyright © 2026 Buddhika Jayaneththi
+                </div>
+                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                    <a href="mailto:buddhika.jayaneththi@dkit.ie" class="d-inline-block text-center ml-2">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/buddhika-gayashani/" class="d-inline-block text-center ml-2" target="_blank">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    
+    <!-- AOS -->
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+      });
+    </script>
+
+    <script>
+        //benefit calculation
+        function calculateBenefitValue() {
+            // Get input values
+            let probability = parseFloat(document.getElementById("probability").value);
+            let magnitude = parseFloat(document.getElementById("magnitude").value);
+
+            // Validate inputs
+            if (isNaN(probability) || isNaN(magnitude)) {
+                document.getElementById("result1").innerHTML = "Please enter valid probability and magnitude";
+                document.getElementById("result1").style.color = "red";
+                return;
+            }
+
+            // Calculate Residual Risk
+            let benefitValue = probability * magnitude;
+
+            // Display result
+            document.getElementById("result1").innerHTML = `Benefit Value: <span style="color:blue;">${benefitValue.toFixed(2)}</span>`;
+        }
+
+        //benefit-risk ration calculation
+
+         function calculateBenefitRiskRatio() {
+                    // Get input values
+                    let benefit = parseFloat(document.getElementById("benefit").value);
+                    let risk = parseFloat(document.getElementById("risk").value);
+
+                    // Validate inputs
+                    if (isNaN(benefit) || isNaN(risk)) {
+                        document.getElementById("result2").innerHTML = "Please enter valid benefit value and risk value";
+                        document.getElementById("result2").style.color = "red";
+                        return;
+                    }
+
+                    // Calculate Residual Risk
+                    let benefitriskratio = benefit / risk;
+
+                    // Display result
+                    document.getElementById("result2").innerHTML = `Benefit-Risk Ratio: <span style="color:blue;">${benefitriskratio.toFixed(2)}</span>`;
+                }
+    </script>
+</body>
+
+</html>
+
