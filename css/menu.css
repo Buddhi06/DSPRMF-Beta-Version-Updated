@@ -1,0 +1,97 @@
+
+        /* Top bar menu styles */
+        .top-bar {
+            background-color: #002147; /* Dark blue */
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center; /* Align center */
+            align-items: center;
+            list-style: none;
+            gap: 20px; /* Even spacing between items */
+        }
+
+        .top-bar li {
+            position: relative;
+            display: inline-block;
+        }
+
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 15px;
+            display: block;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .top-bar a:hover {
+            background-color: #191970; /* Lighter green */
+            border-radius: 5px;
+        }
+
+        /* Dropdown menu */
+        .dropdown, .sub-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #191970;
+            min-width: 220px;
+            display: none;
+            list-style: none;
+            padding: 0;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+
+        .dropdown li, .sub-dropdown li {
+            width: 100%;
+        }
+
+        .dropdown a, .sub-dropdown a {
+            padding: 10px;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown a:hover, .sub-dropdown a:hover {
+            background-color: #2a52be;
+        }
+
+        /* Show dropdown on hover */
+        .top-bar li:hover > .dropdown,
+        .dropdown li:hover > .sub-dropdown {
+            display: block;
+        }
+
+        /* Sub-dropdown positioning */
+        .sub-dropdown {
+            top: 0;
+            left: 100%;
+        }
+
+        /* Responsive Menu */
+        @media screen and (max-width: 768px) {
+            .top-bar {
+                flex-direction: column;
+                align-items: stretch;
+                text-align: left;
+                gap: 10px;
+            }
+
+            .top-bar a {
+                width: 100%;
+            }
+
+            .dropdown, .sub-dropdown {
+                position: static;
+                display: none;
+                width: 100%;
+            }
+
+            .top-bar li:hover .dropdown,
+            .dropdown li:hover .sub-dropdown {
+                display: block;
+            }
+        }
+   
