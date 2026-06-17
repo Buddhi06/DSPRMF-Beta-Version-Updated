@@ -1,0 +1,148 @@
+<html>
+<meta charset="UTF-8">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DSRMF</title>
+    <meta name="description" content="Free bootstrap template Atlas">
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css">
+<link rel="stylesheet" href="css/menu.css">
+     
+</head>
+
+<body>
+    
+       <nav>
+        <ul class="top-bar">
+            <li><a href="index.html">The Risk Management Process</a></li>
+            <li>
+
+                <a href="#">Phase 1: Risk Assessment ▼</a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="#">Step 1: Risk Analysis ►</a>
+                        <ul class="sub-dropdown">
+                            <li><a href="analysis-step2.html">Step 1.1: Identification of Intended use and characteristics related to data security</a></li>
+                            <li><a href="analysis-step3.html">Step 1.2: Identification of assets, threats and vulnerabilities</a></li>
+                          
+                            <li><a href="analysis-step4.html">Step 1.3: Risk Estimation</a></li>
+                        </ul>
+                        <a href="evaluation.html">Step 2: Risk Evaluation ►</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="control.html">Phase 2: Risk Control ▼</a>
+                <ul class="dropdown">
+                    <li><a href="control.html">Step 2.1: Risk Control Option Analysis</a></li>
+                     <li><a href="mapping2.drawio.html">Step 2.2: Mapping of threats/vulnerabilities/controls/control implementation details to the AI Model Development Lifecycle </a></li>
+                    <li><a href="residual.html">Step 2.3: Residual Risk Evaluation</a></li>
+                    <li><a href="benefit.html">Step 2.4: Benefit-Risk Analysis</a></li>
+                </ul>
+            </li>
+            <li><a href="overall-residual.html">Phase 3: Evaluation of Overall Residual Risk Acceptability</a></li>
+            <li><a href="RMreport.html">Phase 4: Prepare Risk Management Report</a></li>
+        </ul>
+    </nav>
+    	<div class="container mt-5">
+    <div class="container2">
+    <a href="index.html"><image src="img/home.jpg" width="50" height="50"></image>&nbsp; &nbsp; Home</a>
+    <h2 class="text-center font-weight-bold my-5">STRIDE Phase 4 and 5: Threat and Vulnerability Identification </h2>
+    <a href="stride3.html"><image src="img/back.jpg" width="50" height="50"></image>&nbsp; &nbsp; Back</a>&nbsp; &nbsp;
+    <a href="analysis-step4.html"><image src="img/next.jpg" width="50" height="50"></image>&nbsp; &nbsp; Next</a>
+</div>
+<div class="row">
+    <h4>Mapping of Threats to STRIDE Threat Categories and Security Properties</h4>
+      
+
+<div class="row">
+    <table class="table table-bordered">
+        <thead class="table-dark">
+        <tr>
+            <th>Threat</th>
+            <th>Threat Category</th>
+            <th>Security Property</th>
+        </tr>
+    </thead>
+        <tr>
+            <td>Spoofing</td>
+            <td>The attacker impersonates or masquerades as another person, system, or process to gain unauthorised access or perform malicious actions.</td>
+            <td>Authenticity</td>
+        </tr>
+        <tr>
+            <td>Tampering</td>
+            <td>An attacker modifies the data, either in transit or at rest, to manipulate the outcomes or disrupt the operations.</td>
+            <td>Integrity</td>
+        </tr>
+        <tr>
+            <td>Repudiation</td>
+            <td>An attacker deletes information about an action or transaction in order to deny it ever took place, and the system lacks the ability to prove otherwise.</td>
+            <td>Non-repudiation</td>
+        </tr>
+        <tr>
+            <td>Information Disclosure</td>
+            <td>Sensitive information is stolen, accessed, or intercepted by unauthorised users either in transit, at rest, or during processing.</td>
+            <td>Confidentiality</td>
+        </tr>
+        <tr>
+            <td>Denial of Service (DoS)</td>
+            <td>An attempt to disrupt the availability of a system, application, or service, making it inaccessible to legitimate users.</td>
+            <td>Availability</td>
+        </tr>
+        <tr>
+            <td>Elevation of Privilege</td>
+            <td>This is similar to spoofing, but instead of taking the identity of another, the attacker elevates their own security level to an administrator.</td>
+            <td>Authorisation</td>
+        </tr>
+    </table>
+</div>
+  <div>
+    <ul>
+        <li>Each asset shold be analysed in terms of the above threat categories to identify the threats that affect for each asset.</li>
+        </ul>
+        <div>
+        <center><button class="btn" onclick="window.open('Threats and Vul2.drawio.html','mywindow')">Mapping of identified threats to STRIDE threat categories and security properties</center>     
+        </button>
+    </div>
+    </div>
+    <div class="row">
+        <h4>Vulnerability Identification</h4>
+        <ul>
+            <li>As the last step, list the vulnerabilities associated with each asset that make each asset vulnerable to the listed threats. </li>
+        </ul>
+        <p>The following threat and vulnerabiity taxonomy can be used as the basis for identifying threats and vulnerabilites:</p><br>
+    </div>
+    <div>
+        <center><button class="btn" onclick="window.open('Threats and Vul2.drawio.html','mywindow')">Threat and Vulnerability Taxonomy</center>     
+        </button>
+    </div>
+</div>
+<br>
+<!-- copyright -->
+    <div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                    Copyright © 2025 Buddhika Jayaneththi
+                </div>
+                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                    <a href="mailto:buddhika.jayaneththi@dkit.ie" class="d-inline-block text-center ml-2">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/buddhika-gayashani/" class="d-inline-block text-center ml-2" target="_blank">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
