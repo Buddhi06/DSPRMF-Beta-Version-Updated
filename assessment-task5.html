@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DSRMF</title>
+    <meta name="description" content="Free bootstrap template Atlas">
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+ <link rel="stylesheet" href="css/menu.css">
+     
+</head>
+
+<body>
+    
+       <nav>
+        <ul class="top-bar">
+            <li><a href="diagram.html">The Risk Management Process</a></li>
+            <li>
+
+                <a href="#">Phase 01: Risk Assessment ▼</a>
+                <ul class="dropdown">
+                    <li><a href="prepare.html">Phase 01.01: Prepare for Risk Assessment</a></li>
+                    <li>
+                        <a href="#">Phase 01.02: Conduct Risk Assessment ►</a>
+                        <ul class="sub-dropdown">
+                            <li><a href="analysis.html">Step 01: Risk Analysis</a></li>
+                            <li><a href="evaluation.html">Step 02: Risk Evaluation</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="control.html">Phase 02: Risk Control ▼</a>
+                <ul class="dropdown">
+                    <li><a href="mapping2.drawio.html">Phase 02.01: Mapping</a></li>
+                    <li><a href="residual.html">Phase 02.02: Residual Risk Evaluation</a></li>
+                    <li><a href="benefit.html">Phase 02.03: Benefit-Risk Analysis</a></li>
+                </ul>
+            </li>
+            <li><a href="overall-residual.html">Phase 03: Evaluation of Overall Residual Risk Acceptability</a></li>
+            <li><a href="RMreport.html">Phase 04: Prepare Risk Management Report</a></li>
+        </ul>
+    </nav>
+    <div class="container mt-5">
+    <div class="container2">
+    <a href="index.html"><image src="img/home.jpg" width="50" height="50"></image>&nbsp; &nbsp; Home</a>
+    <h2 class="text-center font-weight-bold my-5">Task 05: - Identify the risk model and analytical approach </h2>
+    <a href="analysis.html"><image src="img/next.jpg" width="50" height="50"></image>&nbsp; &nbsp; Next</a>
+</div>
+
+        <div class="row" id="cn-step1">
+            <p>
+          Organisation define the <b><i>risk model</i></b> for use in conducting risk assessment and the specific <b><i>analytical approach</i></b> to be used for the risk assessment including: <br>
+          <ul>
+           <li>Assessment approach</li>
+           <li>analysis approach</li>
+           </ul> 
+        </p>
+         </div>
+
+<div class="row" id="selRAN">
+      <p> 
+        <b>Risk Model</b><br>
+            Risk model defines the risk factors to be assessed and the relationship among those factors [2]. <br>
+            <b><i>“The framework uses threat, vulnerability, impact and likelihood as the risk factors. </i></b>
+             </p>
+         </div>
+
+<div class="row" id="selRAN">
+      <p> 
+        <b>Analytical Approach</b><br>
+            Selecting the analytical approach includes: selecting the<b><i> assessment approach </b></i>and selecting the<b><i> analysis approach </i></b>
+             </p>
+         </div>
+
+
+<div class="row" id="step2">
+                <h3>
+                    Select the Risk Assessment Approach
+                </h3>
+                <p>
+                    The risk is determined by considering the likelihood that known threats exploit known vulnerabilities and the resulting consequences or adverse impacts if such exploitations occur. The risk assessment phase starts with selecting the risk assessment approach. There are three main risk assessment approaches: <i><b> qualitative, quantitative and semi-quantitative</i></b>. 
+                </p>
+            </div>
+            <div class="row">
+    <div class="col-4" id ="c1" onclick="toggle('div1')">
+       <center> <button  id="btn1">Qualitative</button></center>
+    </div>
+   
+    
+    <div class="col-4" id="c2" onclick="toggle('div2')">
+        <center><button  id="btn2" >Quantitative</button></center>
+    </div>
+    
+     
+    <div class="col-4" id="c3" onclick="toggle('div3')">
+      <center><button  id="btn3" >Semi-Quantitative</button></center>
+    </div>
+</div>
+<br>
+
+    <div class="row">
+    <div class="col-4 hidden rounded shadow-md" id="div1" >
+      <p>The qualitative approach typically uses a set of methods, principles, or rules for assessing risks based on nonnumerical categories or levels (e.g., very low, low, moderate, high, very high) [2]. However, in most circumstances, the range of values in qualitative approach is comparatively small, which makes the relative prioritisation or comparison within the set of reported risks difficult [2]. Furthermore, the assessment results could depend on the individual experiences if each value is not very clearly defined or is not characterised by meaningful examples [2]. Therefore, the levels of qualitative scales should be unambiguous, should not overlap, the qualitative descriptions should be expressed in objective language and their increments should be clearly defined [4]. </p>
+    </div>
+    <div class="col-4 hidden rounded shadow-md" id="div2" >
+        <p>The quantitative approach typically uses a set of methods, principles or rules for assessing risk based on use of numbers where the meanings and proportionality of values are maintained inside and outside the context of the assessment [2]. This type of risk assessment most effectively supports cost-benefit analysis of alternative risk responses or courses of action [2]. The risk is usually expressed in monetary values which shows the amount of money an organisation may lose over a certain period of time if the threat event occurs or vulnerability is exploited. Risk level can be calculated using any method and taking into account any relevant factors, but it is usually shown by multiplying the likelihood by the consequence [4]. Likelihood represents the probability or frequency of an event occurring within a given timeframe, i.e., annually (per year), large (e.g., per century) or little (e.g., per second) [4]. However, the meaning of the quantitative results may not always be clear and may require interpretation and explanation, i.e., usually to explain the assumptions and constraints on using the results [2]. Usually, the risks can be quantified as annual loss expectancy [4] and can be calculated by using the formula:
+ALE=SLE×ARO
+SLE=AV×EF
+ALE-Annual Loss Expectancy
+SLE-Single Loss Expectancy=The value of single data security threat
+ARO-Annual Rate of Occurrence=Estimated frequency with which that data security threat might occur in one year 
+AV-Asset Value = The total monetary value of the asset
+EF-Exposure Factor = The percentage of loss likely to occur if the threat event occurs
+</p>
+    </div>
+    <div  class="col-4 hidden rounded shadow-md" id="div3">
+        <p>The semi-quantitative approach typically uses a set of methods, principles, or rules for assessing risk that uses bins, scales or representative numbers whose values and meanings are not maintained in other contexts [2]. Semi-quantitative approach can provide the benefits of both quantitative and qualitative approaches. The bins (e.g., 0-15, 16-35, 36-70, 71-85, 86-100) or scales (e.g., 1-10) can be easily translated into qualitative terms that support the communication of risks. E.g., a score of 95 can be interpreted as very high, while also allowing relative comparisons between values in different bins even within the same bin (e.g., the difference between a risk with the score of 70 and 71 respectively is relatively insignificant, while the difference between risks scored 36 and 70 is relatively significant) [2]. In semi-quantitative approach, the role of expert judgement in assigning values is more evident than in a purely quantitative approach [2].</p>
+    </div>
+
+
+<div id="collapse" class="row">
+ <h3 align="text-center">Comparison of the three risk assessment approaches</h3>
+ <br><br>
+<div class="col-12">
+                <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Approach</th>
+                <th>Advantages</th>
+                <th>Disadvantages</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Qualitative Approach</strong></td>
+                <td>
+                    <ul>
+                        <li>Quick to implement as it does not rely on numerical data.</li>
+                        <li>No special tools or software required.</li>
+                        <li>Less expensive than the quantitative approach.</li>
+                        <li>Can assess intangible assets (e.g., reputation, goodwill).</li>
+                        <li>Involves non-security and non-technical staff easily.</li>
+                        <li>Helps in early identification and prioritization of risks.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Results depend on expert experience and team quality.</li>
+                        <li>Subjective and may introduce biases.</li>
+                        <li>Difficult to compare risks due to a small range of values.</li>
+                        <li>Limited ability to quantify and compare risks accurately.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Quantitative Approach</strong></td>
+                <td>
+                    <ul>
+                        <li>Provides objective, measurable risk assessment.</li>
+                        <li>Enables comparison of risk severity.</li>
+                        <li>Well-understood asset valuation and risk mitigation options.</li>
+                        <li>Supports cost/benefit assessments, aiding senior management decisions.</li>
+                        <li>Expresses results in management-friendly terms (e.g., monetary value, probability).</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>More time-consuming and complex.</li>
+                        <li>Data collection can be costly and difficult.</li>
+                        <li>Requires interpretation and explanation of assumptions.</li>
+                        <li>Needs a significant amount of historic data and expertise.</li>
+                        <li>Relies on available data quality.</li>
+                        <li>Requires specialized methods/tools (e.g., EMV, Decision Tree Analysis, Monte Carlo Analysis, FTA, FMEA).</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Semi-Quantitative Approach</strong></td>
+                <td>
+                    <ul>
+                        <li>Incorporates expert judgment in value assignments.</li>
+                        <li>Provides better relative prioritization than qualitative approaches (if scales offer enough granularity).</li>
+                        <li>Does not require specialized tools.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Requires clearly defined scales or value bins.</li>
+                        <li>More time-consuming than a qualitative approach.</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    
+    </div>
+    <div class="row" id="selRAN">
+    <h4>The framework proposes to use the following approach</h4>
+    <p>
+       Most security risk assessment models use qualitative or semi-quantitative approaches to assess security risks [1]. Quantitative risk assessment has the following gaps when considering for data security risk assessment of MDS AI model development:
+       <ul>
+        <li><b>Lack of sufficient historic data</b> - As the quantitative risk assessment utilises historical data to determine the likelihood of a threat event occurring and or vulnerability being exploited, the historical data that is not recently updated can cause errors in the risk assessment. Moreover, as data security of MDS AI model development is an emerging domain, there is a limited data to estimate the probability and impact numerically.</li>
+        <li><b>Complexity and resource constraints</b> – As quantitative risk assessment methods require extensive resources, expertise and tools for assessing risks, the small MDS development organisations with limited security experts may not have the capability to conduct the assessment.</li>
+        <li><b>Difficulty in communicating and understanding the results</b> – As Quantitative risk assessment use complex formula (e.g.; Annual Loss expectancy), interpreting the results is difficult and time consuming. Qualitative and semi-quantitative assessment use risk matrices and verbal risk levels (Eg: Low, Medium, High) that are easier to interpret makes the assessment more convenient.</li>
+       </ul>
+
+       <br>
+       <p>
+           Therefore, this framework suggests using <b><i>qualitative</i></b> and/or <b><i>semi-quantitative</i></b> approaches for data security risk assessment.
+       </p>
+    </p>
+    
+</div>
+
+<div class="row" id="step2">
+    <h3>
+    Select the Risk Analysis Approach
+    </h3>
+ <p>
+    There are three applicable risk analysis approaches depending on which risk factor (threat, vulnerability and impact) is assessed first. <i><b>Threat-oriented, asset/impact-oriented and vulnerability-oriented </b></i> [1]. The choice of which approach to follow should be documented in the security risk management plan [1]. 
+                </p>            
+            </div>
+        <div class="row">
+    <div class="col-4" id ="c1" onclick="showDetails(event, 'detail1')">
+       <center> <button  id="btn1">Threat-oriented approach</button></center>
+       <div id="detail1" class="detail-box">
+            The Threat-oriented approach starts with the identification of threat sources and threat events, and focuses on the development of threat scenarios [1], [2]. Vulnerabilities are identified in the context of threats and the impacts are identified based on adversary intent [2]. 
+            <br>
+            <button class="close-btn" onclick="closeDetails(event, 'detail1')">Close</button>
+        </div>
+    </div>
+    
+    <div class="col-4" id="c2" onclick="showDetails(event, 'detail2')">
+        <center><button  id="btn2" >Asset/impact-oriented approach</button></center>
+         <div id="detail2" class="detail-box">
+            The Asset/impact-oriented approach starts with the identification of impacts or consequences or concerns and critical assets, and identifying threat events that could lead to and/or threat sources that could seek those impact or consequences [2]. There you need to perform a complete asset inventory and assess the potential impact if those assets are compromised. Then, identify vulnerabilities that could lead to those impacts and threat sources/events that might initiate exploits utilising those vulnerabilities [1]. 
+            <br>
+            <button class="close-btn" onclick="closeDetails(event, 'detail2')">Close</button>
+        </div>
+    </div>
+    
+     
+    <div class="col-4" id="c3" onclick="showDetails(event, 'detail3')">
+      <center><button  id="btn3" >Vulnerability-oriented approch</button></center>
+      <div id="detail3" class="detail-box">
+            The Vulnerability-oriented approach starts with a set of exploitable weaknesses/deficiencies or predisposing conditions and identifies threat events that cold exercise those vulnerabilities together with possible consequences of vulnerabilities being exercised [2]. 
+            <br>
+            <button class="close-btn" onclick="closeDetails(event, 'detail3')">Close</button>
+        </div>
+    </div>
+
+<div class="row" id="RANstep1-1">
+        <p>
+            Each analysis approach takes into consideration the same risk factor (threat, vulnerability and impact) and contains the same set of risk assessment activities but in different order [2]. It is up to the manufacturer to decide which strategy to use, and the decision should be documented in the security risk management plan [1]. AAMI TIR 57 standard suggests to use the three approaches based on the following requirements:
+        </p>
+        <ol>
+                        <li>If the target of the analysis is a complete system or if there are specific threats that should be addressed – <b>Threat-oriented approach</b></li>
+                        <li>If the target of the analysis is a single device that will be used in the context of a larger system – <b> Asset/impact-oriented approach</b></li>
+                        <li>During post-market deployment, i.e., when new risks may be learned through the exposure of new vulnerabilities – <b>Vulnerability-oriented approach</b></li>
+                    </ol>
+    </div>
+<div class="row" id="selRAN">
+<p>The framework uses the <b>asset/impact-oriented risk analysis approach</b>. It is based on the <b>STRIDE</b> threat modelling, i.e., an asset-centred threat modelling tool which is identified as a promising starting point for AI threat modelling by independent agencies like the <i>European Union Agency for Cybersecurity (ENISA) </i>.</p>
+</div>
+</div>
+<div class="row">
+    <h3>Summary - Risk Model and Analyticak Approach</h3>
+</div>
+<div class="container1" style="margin-bottom: 10px">
+        <div class="box">
+            <strong>Risk Model</strong>
+            <div class="inner-box">Threat, vulnerability, impact and likelihood</div>
+        </div>
+        <div class="bottom-container1">
+            <div class="box">
+                <strong>Risk assessment approach</strong>
+                <div class="inner-box">Qualitative and/or semi-quantitative</div>
+            </div>
+            <div class="box">
+                <strong>Risk analysis approach</strong>
+                <div class="inner-box">Asset/impact-oriented</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    <!-- copyright -->
+    <div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                    Copyright © 2025 Buddhika Jayaneththi
+                </div>
+                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                    <a href="mailto:buddhika.jayaneththi@dkit.ie" class="d-inline-block text-center ml-2">
+                        <i class="fa fa-medium" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/buddhika-gayashani/" class="d-inline-block text-center ml-2" target="_blank">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    
+    <!-- AOS -->
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+      });
+    </script>
+    <script type="text/javascript" src="js/toggle.js"></script>
+</body>
+
+</html>
