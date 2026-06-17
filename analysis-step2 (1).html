@@ -1,0 +1,183 @@
+<html>
+<meta charset="UTF-8">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DSRMF</title>
+    <meta name="description" content="Free bootstrap template Atlas">
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css">
+
+        <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+
+
+<link rel="stylesheet" href="css/menu.css">
+     
+</head>
+
+<body style="background: linear-gradient(90deg, #e8f0f7, #ffffff);  background-color: #b0c4de;">
+    
+       <nav style="display: flex; justify-content: space-between; align-items: center; background: #000039; padding: 0px;">
+    
+    <!-- Main Menu -->
+    <ul class="top-bar" style="display: flex; list-style: none; margin: 0; padding: 0;">
+        <li style="margin-right: 20px;"><a href="home.html" style="color: white; text-decoration: none;">Home: The Risk Management Process</a></li>
+        <li style="margin-right: 20px; position: relative;">
+            <a href="#" style="color: white; text-decoration: none;">Phase 1: Risk Assessment ▼</a>
+            <ul class="dropdown">
+                <li>
+                    <a href="#" style="color: white; text-decoration: none;">Step 1: Risk Analysis ►</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="analysis-step2.html">Activity 1: Identification of Intended use and characteristics related to data security and privacy</a></li>
+                        <li><a href="analysis-step3.html">Activity 2: Identification of assets, threats and vulnerabilities</a></li>
+                        <li><a href="analysis-step4.html">Activity 3: Risk Estimation</a></li>
+                    </ul>
+                    <a href="evaluation.html" style="color: white; text-decoration: none;">Step 2: Risk Evaluation ►</a>
+                </li>
+            </ul>
+        </li>
+        <li style="margin-right: 20px;">
+            <a href="control.html" style="color: white; text-decoration: none;">Phase 2: Risk Control ▼</a>
+            <ul class="dropdown">
+                <li><a href="control.html">Step 1: Risk Control Option Analysis</a></li>
+                <li><a href="mapping3.drawio.html">Step 2: Identification and Implementation of Risk Controls</a></li>
+                <li><a href="residual.html">Step 3: Residual Risk Evaluation</a></li>
+                <li><a href="benefit.html">Step 4: Benefit-Risk Analysis</a></li>
+            </ul>
+        </li>
+        <li style="margin-right: 20px;"><a href="overall-residual.html" style="color: white; text-decoration: none;">Phase 3: Evaluation of Overall Residual Risk Acceptability</a></li>
+        <li><a href="RMreport.html" style="color: white; text-decoration: none;">Phase 4: Preparation of the Risk Management Report</a></li>
+    </ul>
+
+    <!-- Home, Back, Next Buttons -->
+    <div style="display: flex; gap: 10px;">
+        <a href="home.html" style="background: #6c757d; color: white; padding: 8px 15px; border-radius: 8px; text-decoration: none; font-weight: bold;">Home</a>
+        <a href="analysis-step3.html" style="background:#28a745; color:white; padding:8px 15px;
+              border-radius:6px; text-decoration:none; font-weight:bold;
+              width:110px; text-align:center;">Next Step</a>
+    </div>
+</nav>
+
+    	<div class="container mt-5">
+    <div class="container2">
+    <h2 class="text-center font-weight-bold my-5"><i>Phase 1: Step 1:</i><br> Activity 1 - Identify the intended use and the characteristics related to data security and privacy </h2>
+</div>
+
+     <div class="row" id="IU-DS">
+        <div class="col-md-6"><h4>Intended Use</h4><br>
+            <p>Each risk analysis begins with identifying and documenting a clear description of the MDS AI model and its intended use. Understanding the MDS AI model and its intended use is particularly important when assessing the likelihood and impact of threats in Activity 3 and identifying the threat landscape in Activity 2. 
+            The following factors should be considered when describing the MDS AI model and identifying its intended use:</p>
+            <div class="section"  onclick="toggleDiv(0)">
+            <div class="label"><h4><i><center>Factors to be considered</center></i></h4></div><br>
+            <div  class="content">
+             <table class="table table-bordered" >
+                <thead class="table-dark">
+        <tr>
+            <th></th>
+        </tr>
+     </thead>
+        <tr>
+            <td>What clincal purpose(s) does the MDS AI model serve (diagnosis, treatment planning, prognosis, monitoring or another clinical performance)? <i style="font-size: 0.8em;">(This is particularly useful when assessing the impact of threats in Activity 3)</i></td>
+        </tr>
+        <tr>
+            <td>Does the AI model drive or significantly influence the clinical management of the patient? <i style="font-size: 0.8em;">(This is particularly useful when assessing the impact of threats in Activity 3)</i></td>
+        </tr>
+        <tr>
+            <td>Who are the intended users of the MDS AI model (Will it be used by healthcare prefessionals, patients or other stakeholders)? <i style="font-size: 0.8em;">(This is particularly useful when identifying the threat landscape in Activity 2)</i></td>
+        </tr>
+        <tr>
+            <td>What target population the MDS AI model designed for (Are there any specific inclusion/exclusion criteria related to demographics, medical conditions or other factors)? <i style="font-size: 0.8em;">(This is particularly useful in Activity 2 and Activity 3, as models serving vulnerable populations process inherently more sensitive data, elevating the breadth of threats and their estimated severity.)</i> </td>
+        </tr>
+        <tr>
+            <td>Does the MDS AI model include mechanisms to detect errors such as domain shift, out of distribution inputs, and missing or corrupted data?<i style="font-size: 0.8em;">(This is particularly useful in Activity 2, as absence of such mechanisms is itself a vulnerability and it enables adversarial input attacks and data integrity threats to succeed undetected.)</i></td>
+        </tr>
+        <tr>
+            <td>In what clinical environment will the MDS AI model be deployed (Is it designed for use in hospitals, clinics, home settings or other healthcare environments)?<i style="font-size: 0.8em;">(This is particularly useful in Activity 2 when determining threats in deployment environment)</i></td>
+        </tr>
+         <tr>
+            <td>What autonomous functions, if any, does the MDS AI model provide? What is the level of that autonomy (E.g., decision support only, conditional automation, full automation)?<i style="font-size: 0.8em;">(This is particulary useful in Activity 3, as the level of autonomy determines the maximum patient harm a successful attack can cause, directly shaping impact severity ratings)</i></td>
+        </tr>
+           <tr>
+            <td>Does the MDS AI model have the ability to learn over time? If so, is there any potential impact to the intended use? What controls are in place to detect and correct for bias in new input data for models that learn over time? <i style="font-size: 0.8em;">(This has implications in Activity 2, as a continuously learning model introduces a dynamic and ongoing threat surface) </i></td>
+        </tr>
+         
+    </table>
+</div>
+        </div>
+     </div>
+
+        <div class="col-md-6"><h4>Characteristics related to Data Security and Privacy</h4><br>
+            <p>The following factors are suggested to be considered when identifying the characteristics related to data security and privacy of the MDS AI model. Understanding these characteristics is particularly important when identifying threats, and vulnerabilities in Activity 2, estimating the likelihood and impact of those threats in Activity 3, and selecting and implementing appropriate risk controls in Phase 2.</p>
+            <div class="section"  onclick="toggleDiv(1)">
+            <div class="label"><h4><i><center>Factors to be asked</center></i></h4></div><br>
+            <div  class="content">
+             <table class="table table-bordered" >
+                <thead class="table-dark">
+                    <tr>
+            <th></th>
+        </tr>
+        </thead>
+
+        </tr>
+        
+        <tr><td>Does the MDS AI model process PII data? <i style="font-size: 0.8em;">(This is particularly useful Activity 2 to determine whether privacy breach threats must be included in the threat register.)</i></td></tr>
+        <tr><td>Are the training data, testing data, validation data, and resultant model data encrypted when at rest? <i style="font-size: 0.8em;">(This is particularly useful in Activity 2 to identify data-at-rest exposure as a vulnerability if encryption is absent or insufficient.)</i></td></tr>
+        <tr><td>Where is the data used by the model stored? and can it be altered after storage? <i style="font-size: 0.8em;">(This is particularly useful in Activity 2 to identify data storage related threats.)</i></td></tr>
+        <tr><td>Are backups created and stored elsewhere? Are backups encrypted? Are they encrypted prior to transmission? Is there a limit on how long backups are kept or on how many versions are kept? <i style="font-size: 0.8em;">(This is particularly useful in Activity 2 to identify backup-related threats and vulnerabilities.)</i></td></tr>
+        <tr><td>Is patient data scrubbed or obscured to remove personal information when not required? <i style="font-size: 0.8em;">(This is particularly useful in Activity 2 to identify re-identification threats as unnecessary retention of PII expands the attack surface.)</i></td></tr>
+        <tr><td>How is the integrity of the training data, testing data, validation data and resultant model data preserved during storage and transfer? <i style="font-size: 0.8em;">(This is particularly useful in Activity 2 to identify data integrity threats such as tampering, corruption, and unauthorised modification across the data lifecycle.)</i></td></tr>
+        <tr><td>Is the data encrypted when not at rest? <i style="font-size: 0.8em;">(This is particularly useful in Activity 2 to identify identify in-transit threats where encryption is absent or weak.)</i></td></tr>
+        <tr><td>Is encryption fixed or configurable? Is encryption based on a publicly recognised standard (E.g., AES 256) (recommended) or on a home-grown solution? How are keys managed? <i style="font-size: 0.8em;">(This is particularly useful in Activity 2 to identify cryptographic weaknesses as vulnerabilities, including the use of non-standard algorithms and poor key management practices.)</i></td></tr>
+        <tr><td>Are you training from user-supplied inputs (e.g., direct clinical data inputs from clinicians, technicians etc...,manual user entries such as patient demographics, symptoms or severiety scales) What kind of input validation/sanitisation techniques are used? <i style="font-size: 0.8em;">(This is particularly useful in Activity 2 to identify data poisoning, prompt injection, and training data manipulation threats that arise when user-supplied inputs lack adequate validation controls.)</i></td></tr>
+        <tr><td>Do portions of the data have different levels of sensitivity (PII/non-PII)? Is all data encrypted, or just PII? <i>[Sensitive data - Personal data revealing the aspects such as biometric data for unique identification and health data of an individual (According to Article 9-GDPR)]</i> <i style="font-size: 0.8em;">(This is particularly useful in Activity 2 and Activity 3 to identify threats that exploit inconsistent protection across data sensitivity levels, and to ensure severity ratings reflect the full scope of sensitive data processed.)</i></td></tr>
+        <tr><td>What kinds of non-PII or personal data does the MDS AI model process (e.g., diagnostic data or therapy parameters)? <i style="font-size: 0.8em;">(This is particularly useful in Activity 2 to ensure that threats to non-PII clinical data are considered.)</i></td></tr>
+        <tr><td>Are controls in place to ensure the appropriate confidentiality, integrity, and authenticity of the data before and after transfer? <i style="font-size: 0.8em;">(This is particularly useful in Activity 2 to identify to identify gaps in the CIA triad.)</i></td></tr>
+        <tr><td>If an adverse event occurs, can the data be recovered or restored? <i style="font-size: 0.8em;">(This is particularly useful in Activity 3 to assess the impact severity of threats.)</i></td></tr>
+        <tr><td>What controls are in place to ensure resilience against adversarial/poisoned inputs? <i style="font-size: 0.8em;">(This is particularly useful in Activity 2 to identify model evasion and data poisoning.)</i></td></tr>
+        <tr><td>What authentication and authorisation mechanisms are in place to ensure only authorised users can interact with the AI model and its data? <i style="font-size: 0.8em;">(This is particularly useful in Activity 2 to identify authentication or authorisation related risks.)</i></td></tr>
+        <tr><td>How are credentials managed? Are credentials updated on a regular basis? How is credential expiration managed? <i style="font-size: 0.8em;">(This is particularly useful in Activity 2 to identify credential-based threats such as credential theft and stale access rights, and in Phase 2 Step 2 to verify that credential lifecycle controls are implemented.)</i></td></tr>
+        <tr><td>Is there a system for logging and auditing access and modifications to the AI model and its data? <i style="font-size: 0.8em;">(This is particularly useful in Activity 2 to identify undetected intrusion and tampering as threats, as the absence of logging removes the ability to detect, investigate, or attribute security incidents.)</i></td></tr>
+        <tr><td>Does your model return raw confidence scores or any other direct output which could be recorded and duplicated? <i style="font-size: 0.8em;">(This is particularly useful in Activity 2 to identify model inversion and membership inference threats, where output probabilities can be exploited to reconstruct training data or infer the presence of specific individuals in the training set.)</i></td></tr>
+        <tr><td>Do you know from where the training data comes? Have you identified statistical norms (e.g., demographic distribution, population etc...) to understand what anomalies look like? What elements of your training data are vulnerable to outside influence? Who can contribute to the data sets you’re training from? <i style="font-size: 0.8em;">(This is particularly useful in Activity 2 to identify supply chain, data provenance, and training data manipulation threats that arise when the origin, composition, and access controls of training data are not clearly defined.)</i></td></tr>
+        <tr><td>What is the impact of your training data being recovered by attacking/inverting your model? <i style="font-size: 0.8em;">(This is particularly useful in Activity 3 to assign an impact severity rating to model inversion threats, as successful reconstruction of training data may constitute a significant privacy breach affecting the individuals whose data was used.)</i></td></tr>
+        <tr><td>What are interfaces to and interfaces from the AI model to the environment? <i style="font-size: 0.8em;">(This is particularly useful in Activity 2 to define the full attack surface of the model, as each interface represents a potential entry or exit point for threats including unauthorised data access and injection attacks.)</i></td></tr>
+        </tr>
+    </table>
+    </div>
+        </div>
+     </div>
+ </div>
+</div>
+
+<!-- copyright -->
+    <div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                    Copyright © 2026 Buddhika Jayaneththi
+                </div>
+                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                    <a href="mailto:buddhika.jayaneththi@dkit.ie" class="d-inline-block text-center ml-2">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/buddhika-gayashani/" class="d-inline-block text-center ml-2" target="_blank">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script type="text/javascript" src="js/toggle.js"></script>
+</body>
+</html>
+
